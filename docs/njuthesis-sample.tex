@@ -44,7 +44,7 @@
     % twoside,                % 双面模式，每一章从奇数页开始
     %
     %   字体设置，不填写则自动调用系统预装字体，详见手册
-    % fontset = win|mac|macoffice|fandol|none,
+    fontset = fandol, % 使用 TeX Live 自带字体，跨平台更容易直接编译
   ]{njuthesis}
 
 % 模板选项设置，包括个人信息、外观样式等
@@ -113,13 +113,8 @@
 % 然后在这里用 \include 导入，例如
 %   \include{chapters/introduction}
 %   \include{chapters/environments}
-
-\chapter{引言}
-
-\section{量子计算}
-
-John Preskill 认为我们现在处于“含噪声的中型量子时代”。\cite{preskill2018}
-量子位的不稳定性和有限的量子比特数量限制了量子计算机的复杂度和纠错能力。
+% 本示例已经按章节拆分，可直接在 docs/chapters/ 中继续写作
+\include{chapters/introduction}
 
 %---------------------------------------------------------------------
 %	参考文献
@@ -152,8 +147,7 @@ John Preskill 认为我们现在处于“含噪声的中型量子时代”。\ci
 \appendix
 
 % 可以在这里插入补充材料
-\chapter{正文中涉及的数据及源代码}
-\dots
+\include{chapters/appendix-data-and-code}
 
 % 完工
 \end{document}
