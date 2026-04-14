@@ -19,14 +19,14 @@
     title* = {My Title in English},
     % 英文题目
     %
-    author = {姓名},
+    author = {李佳倩},
     % 作者姓名
     %
-    author* = {Ming Xing},
+    author* = {Jiaqian Li},
     % 作者英文姓名
     % 一般使用拼音
     %
-    keywords = {我,就是,充数的,关键词},
+    keywords = {李佳倩},
     % 中文关键词列表
     % 使用英文半角逗号(,)分隔
     %
@@ -34,36 +34,36 @@
     % 英文关键词
     % 使用英文半角逗号(,)分隔
     %
-    grade = {2018},
+    grade = {2022},
     % 年级
     %
-    student-id = {181850195},
+    student-id = {221240015},
     % 学号或工号
     % 研究生请斟酌大小写字母格式
     % 本模板并不会自动更正大小写
     %
-    department = {化学化工学院},
-    department* = {School of Chemistry and Chemical Engineering},
+    department = {匡亚明学院},
+    department* = {Kuangyaming Honors School},
     % 院系
     %
-    major = {化学},
-    major* = {Chemistry},
+    major = {生物科学},
+    major* = {Biology},
     % 专业
     %
     % major = {封面专业,摘要专业},
     % 研究生专业型学位可能遇到两处内容不一致的情况
     %
-    supervisor = {导师姓名,教授},
-    supervisor*= {Professor My Supervisor},
+    supervisor = {陈雷,教授},
+    supervisor*= {Professor Lei Chen},
     % 导师全称
     % 使用英文半角逗号(,)分隔中文姓名和职称
     %
-    % supervisor-ii = {第二导师姓名,副教授},
-    % supervisor-ii* = {Associate Professor My Second Supervisor},
+    supervisor-ii = {董咸池,教授},
+    supervisor-ii* = {Professor Xianchi Dong},
     % 第二导师全称
     % 如果确实没有第二导师，不填写即可
     %
-    submit-date = {2022-05-20},
+    submit-date = {2026-04-14},
     % 提交日期
     % 格式为 yyyy-mm-dd
     % 不填就是编译当天日期
