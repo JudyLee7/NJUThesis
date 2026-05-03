@@ -11,12 +11,12 @@
 % info 类用于录入个人信息
 %   带*号的为对应英文字段
 \njusetup[info]{
-    title = {第一行标题\\第二行标题\\第三行标题},
+    title = {乙型肝炎病毒\\核心蛋白与表面蛋白preS区\\相互作用的研究},
     % 中文题目
     % 直接填写标题就是自动换行
     % 可以使用换行控制符(\\)手动指定换行位置
     %
-    title* = {My Title in English},
+    title* = {Investigation of the Interaction Between Hepatitis B Virus Core Protein and the preS Region of Surface Protein},
     % 英文题目
     %
     author = {李佳倩},
@@ -26,11 +26,11 @@
     % 作者英文姓名
     % 一般使用拼音
     %
-    keywords = {李佳倩},
+    keywords = {乙型肝炎,病毒,蛋白质互作},
     % 中文关键词列表
     % 使用英文半角逗号(,)分隔
     %
-    keywords* = {Dummy,Keywords,Here,{It Is}},
+    keywords* = {HBV,Virus,PPI},
     % 英文关键词
     % 使用英文半角逗号(,)分隔
     %
@@ -63,7 +63,7 @@
     % 第二导师全称
     % 如果确实没有第二导师，不填写即可
     %
-    submit-date = {2026-04-14},
+    submit-date = {2026-05-15},
     % 提交日期
     % 格式为 yyyy-mm-dd
     % 不填就是编译当天日期
