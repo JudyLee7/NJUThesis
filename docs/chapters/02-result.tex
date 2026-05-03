@@ -1,1 +1,178 @@
+\chapter{结果}
 
+\section{HBc--preS体外互作检测体系的建立思路}
+
+本研究的核心目标是建立能够定量反映HBV核心蛋白（HBc）与HBsAg preS区域相互作用的体外检测体系，并为后续比较preS突变体及小分子抑制剂的影响奠定基础。根据前期结构研究，preS 87--114片段所在的基质样结构域（matrix domain, MD）是与HBV核衣壳结合的关键区域。因此，本研究首先围绕HBc与preS片段的互作检测进行了方法学探索。
+
+考虑到HBc--preS相互作用可能较弱，且容易受到固定化方式、蛋白取向和洗涤步骤影响，本研究前期比较了多种ELISA构型。三类ELISA体系分别从不同角度优化互作检测：其一，直接包被HBc颗粒，再检测结合到HBc上的preS；其二，通过StrepXT定向捕获带Strep标签的preS，再加入HBc并检测结合的核心蛋白；其三，通过抗core Fab捕获HBc颗粒，再检测preS结合。通过比较这些体系的信号窗口、背景水平和重复性，可以判断传统固相ELISA是否适合作为后续突变体和小分子筛选平台。
+
+\section{HBVCp149的制备为ELISA检测提供了核心蛋白样品}
+
+为建立HBc--preS互作检测体系，首先需要获得可用于包被或捕获实验的HBV核心蛋白样品。本研究使用截短形式HBVCp149作为核心蛋白颗粒材料。经盐析分级和Q柱层析后，HBVCp149在主要洗脱组分中呈现清晰的目标条带，说明核心蛋白得到有效富集。层析曲线中主要峰较为明显，同时伴随一个较小的早期肩峰，提示样品中可能存在少量不同装配状态或杂质组分；但用于后续实验的合并组分在SDS-PAGE中整体较为干净，能够满足ELISA包被和定量滴定的需要。
+
+这一结果说明，HBVCp149的表达和纯化流程可以稳定获得后续体外互作分析所需的核心蛋白材料。由于HBc的颗粒状态和表面构象对preS结合具有重要影响，后续ELISA构型比较的重点不再是核心蛋白是否能够获得，而是不同固定化方式能否在尽量保留互作界面的同时产生足够稳定的特异信号。
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.30\textwidth]{figures/result/fig05_a.png}
+  \includegraphics[width=0.30\textwidth]{figures/result/fig05_b.png}
+  \includegraphics[width=0.36\textwidth]{figures/result/fig05_c.png}
+  \caption{HBVCp149的表达与纯化结果。左、中为不同组分的SDS-PAGE分析，右为Q柱层析曲线。目标核心蛋白在主要洗脱组分中得到富集，可用于后续ELISA检测。}
+  \label{fig:hbvcp149-purification}
+\end{figure}
+
+\section{HBc直接包被ELISA显示较强非特异背景}
+
+在第一种ELISA构型中，HBVCp149被直接包被于酶标板表面，随后加入带标签的preS蛋白，并通过抗标签抗体检测结合到板上的preS信号。该设计的优点是检测路径较短，理论上能够直接反映preS与固定化HBc之间的结合；但其潜在问题是核心蛋白直接吸附到塑料表面后，颗粒构象或preS结合面可能受到影响，同时preS和检测抗体也可能产生非特异吸附。
+
+首先对HBVCp149包被量进行滴定，结果显示总信号和扣除背景后的特异信号均呈现可饱和趋势，提示HBc直接包被在技术上具有一定可重复性。根据包被曲线，后续实验选择20 nM HBVCp149作为工作浓度。然而，在该条件下进一步滴定preS时，实验组的特异信号仅轻微升高，整体仍接近基线；同时，在未包被HBc的对照孔中仍可保留较高的总信号。20 nM HBc组与0 nM HBc组之间分离度有限，说明该体系的读数主要受到preS或抗体在板面上的非特异吸附影响，而不是由稳定的HBc--preS特异结合主导。
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.82\textwidth]{figures/result/fig06_a.png}
+  \par\medskip
+  \includegraphics[width=0.31\textwidth]{figures/result/fig06_b.png}
+  \includegraphics[width=0.31\textwidth]{figures/result/fig06_c.png}
+  \includegraphics[width=0.31\textwidth]{figures/result/fig06_d.png}
+  \caption{HBc直接包被ELISA构型的测试结果。HBVCp149包被滴定可获得可饱和信号，但在固定HBc后检测preS结合时，实验组与无HBc对照组分离有限，提示该构型受到非特异吸附背景影响。}
+  \label{fig:elisa-format-a}
+\end{figure}
+
+因此，HBc直接包被ELISA虽然步骤简单，但不能提供足够清晰的HBc依赖性信号窗口。该结果提示，后续体系需要减少preS直接接触塑料表面的机会，并尽量通过定向捕获方式改善preS呈递。
+
+\section{StrepXT捕获preS改善了preS呈递但未形成足够稳定的检测窗口}
+
+为降低preS直接吸附造成的背景，本研究进一步构建了StrepXT捕获preS的ELISA构型。在该体系中，酶标板首先包被StrepXT，随后通过Strep标签定向捕获preS，再加入HBVCp149，最后通过抗core抗体检测结合到preS上的核心蛋白。与直接包被HBc的体系相比，该构型的主要优势在于preS可以通过标签被定向固定，从而提高其可及性并降低随机吸附带来的背景。
+
+在使用该构型前，首先对StrepXT进行了表达纯化和功能评估。经包涵体回收、变性复性和Q柱纯化后，StrepXT在洗脱组分中出现相对富集的目标条带。虽然层析图中存在多个峰，但用于实验的组分与预期分子量相符，说明可用蛋白群体已从主要杂质中分离出来。进一步测定其有效结合位点，平均有效值约为0.852，提示StrepXT复性后仍保留了较好的Strep标签捕获能力，可用于后续preS定向固定实验。
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.19\textwidth]{figures/result/fig07_a.png}
+  \includegraphics[width=0.17\textwidth]{figures/result/fig07_b.png}
+  \includegraphics[width=0.22\textwidth]{figures/result/fig07_c.png}
+  \includegraphics[width=0.25\textwidth]{figures/result/fig07_d.png}
+  \par\medskip
+  \includegraphics[width=0.52\textwidth]{figures/result/fig07_e.png}
+  \caption{StrepXT的表达纯化与功能评估。SDS-PAGE结果显示StrepXT在洗脱组分中得到富集；结合位点定量结果表明复性后的StrepXT仍具有较好的Strep标签捕获能力。}
+  \label{fig:strepx-purification}
+\end{figure}
+
+在StrepXT捕获体系中，50 nM StrepXT能够较稳定地包被于板面并捕获带Strep标签的preS。preS滴定曲线呈现典型的可饱和趋势，且能够较好地用Langmuir单点吸附模型拟合，说明该体系能够有效控制preS本身的呈递过程。基于该结果，后续HBVCp149结合实验中选择100 nM preS作为工作浓度。与HBc直接包被体系相比，StrepXT捕获构型明显改善了preS固定化方式，说明前一构型中的部分背景确实来源于preS在板面上的非特异吸附。
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.42\textwidth]{figures/result/fig09_a.png}
+  \includegraphics[width=0.52\textwidth]{figures/result/fig09_b.png}
+  \caption{StrepXT捕获preS ELISA构型的初步测试。preS捕获滴定呈现可饱和曲线，说明preS呈递得到改善；但后续核心蛋白结合检测的特异信号仍较弱且波动较大。}
+  \label{fig:elisa-format-b-initial}
+\end{figure}
+
+然而，在初始HBc结合实验中，核心蛋白检测信号仍然较分散，特异信号窗口有限。为改善检测步骤，本研究进一步制备并比较了抗core IgG。SDS-PAGE结果显示，IgG D4在还原条件下具有清晰的重链和轻链条带，在非还原条件下可见完整IgG条带，说明该抗体成功表达和纯化；相比之下，IgG E1在当前条件下未获得足够可用的蛋白量。因此，后续实验使用IgG D4替代原检测抗体。
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.55\textwidth]{figures/result/fig08_a.png}
+  \caption{抗core IgG的表达与纯化结果。IgG D4在还原条件下显示重链和轻链条带，在非还原条件下显示完整IgG条带，因此被用于后续核心蛋白检测。}
+  \label{fig:anti-core-igg}
+\end{figure}
+
+替换为抗core IgG D4后，100 nM preS组与0 nM preS对照组之间的分离度有所改善，尤其是在中高浓度HBVCp149条件下，实验组信号随核心蛋白浓度升高而逐渐增加，而对照组上升较慢。这表明该ELISA构型能够报告一定的preS依赖性核心蛋白结合成分。然而，该体系的动态窗口仍不稳定：绝对信号较低，低浓度点波动明显，不同浓度下计算得到的Z-factor变化较大。最佳Z-factor出现在1280 nM HBVCp149条件下，约为0.397；整体范围为-8.896至0.397，始终未达到通常认为适合稳健筛选的0.5阈值。
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.33\textwidth]{figures/result/fig10_a.png}
+  \includegraphics[width=0.33\textwidth]{figures/result/fig10_b.png}
+  \includegraphics[width=0.30\textwidth]{figures/result/fig10_c.png}
+  \caption{替换抗core IgG D4后的StrepXT捕获preS ELISA结果。中高浓度HBVCp149条件下实验组与对照组分离度增加，但Z-factor仍未达到稳健筛选所需水平。}
+  \label{fig:elisa-format-b-igg-d4}
+\end{figure}
+
+因此，StrepXT捕获preS体系较直接包被体系有所改进，但仍不足以作为后续系统比较preS突变体或小分子抑制效果的主要平台。该结果提示，在preS呈递已得到改善后，限制体系表现的主要因素可能转移为核心蛋白检测灵敏度、固相体系中的结合稳定性以及洗涤过程导致的弱相互作用解离。
+
+\section{抗core Fab捕获HBc未能进一步扩大preS依赖性信号}
+
+第三种ELISA构型尝试从核心蛋白呈递方式入手进行优化。该体系首先利用抗core Fab捕获HBVCp149，再加入preS，并通过抗GST抗体检测preS信号。与HBc直接吸附于塑料表面相比，抗体介导捕获理论上更有利于保留HBc颗粒构象，并减少核心蛋白表面互作位点被随机吸附遮挡的可能性。
+
+核心蛋白滴定结果显示，50 nM抗core Fab能够有效捕获HBVCp149，且信号随核心蛋白浓度升高逐渐接近饱和，说明捕获步骤本身在技术上可行。随后在固定HBc条件下进行preS滴定，实验组信号随preS浓度增加而升高，说明体系中可以检测到preS相关读数。然而，未加入HBc的对照组信号也出现明显升高，且HRP-only对照不能完全解释这一背景来源。扣除背景后，50 nM HBc组与0 nM HBc组之间的特异信号差异仍然较小，整体窗口未能明显扩大。
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.31\textwidth]{figures/result/fig11_a.png}
+  \includegraphics[width=0.31\textwidth]{figures/result/fig11_b.png}
+  \includegraphics[width=0.34\textwidth]{figures/result/fig11_c.png}
+  \caption{抗core Fab捕获HBc ELISA构型的测试结果。Fab能够捕获HBVCp149并产生可饱和信号，但preS滴定中无HBc对照仍出现明显背景，导致特异窗口较窄。}
+  \label{fig:elisa-format-c}
+\end{figure}
+
+这一结果说明，即便通过抗core Fab捕获方式改善HBc固定化，ELISA体系仍难以获得干净且稳定的preS依赖性读数。可能原因包括preS或抗GST抗体仍存在非特异吸附，HBc被捕获后的空间取向不一定有利于preS结合，以及HBc--preS相互作用本身较弱、容易在洗涤过程中解离。
+
+\section{ELISA体系不适合作为本研究的主要下游定量平台}
+
+综合三种ELISA构型可以看出，它们分别受限于不同步骤，但共同指向同一结论：常规固相ELISA并不适合作为HBc--preS弱相互作用的主要下游定量平台。HBc直接包被体系主要受preS和抗体非特异吸附影响；StrepXT捕获preS体系改善了preS呈递，但核心蛋白检测窗口和重复性仍不足；抗core Fab捕获HBc体系改善了核心蛋白固定方式，却仍未能显著降低preS检测背景。
+
+这些结果提示，HBc--preS相互作用可能具有亲和力较弱、构象依赖性强和多价效应敏感等特点。ELISA依赖蛋白固定化、多步孵育和反复洗涤，容易破坏弱相互作用平衡，也可能因固相表面吸附而放大背景信号。尤其对于后续需要比较不同preS突变体和不同小分子抑制条件的实验，检测平台不仅需要能够区分实验组与阴性对照，还需要具有足够稳定的动态范围和统计学鲁棒性。从目前结果看，ELISA最多可作为辅助验证手段，而不适合作为主要筛选和定量比较平台。
+
+\section{NanoBiT体系初步建立并显示更适合检测HBc--preS相互作用}
+
+基于ELISA体系的局限，本研究进一步转向NanoBiT发光互补体系。该体系不依赖反复洗涤，而是在接近溶液状态的条件下检测两个融合蛋白之间的空间接近，因此更适合检测弱而可逆的蛋白相互作用。考虑到较大的LgBiT可能影响HBc组装，本研究将较小的SmBiT融合至HBVCp182，而将LgBiT融合至含preS 87--114片段的GST融合蛋白。同时设置不含preS的LgBiT融合蛋白作为阴性对照，并利用GST标签的二聚化特性设置阳性对照，从而在同一体系内比较特异互作、非特异互补和检测上限。
+
+首先对NanoBiT相关构建体进行了小规模表达检测。结果显示，在测试条件下，四种融合蛋白均可检测到表达，其中一组诱导条件下目标蛋白表达较为明显，因此被选为后续蛋白制备的参考条件。随后对HBVCp182-SmBiT进行盐析和SP柱纯化，目标条带能够在洗脱组分中检测到，但纯度仍不理想，说明该蛋白制备流程仍需进一步优化。相比之下，GST标记的LgBiT融合蛋白以及GST-SmBiT均能够成功表达并通过GST亲和纯化获得较明显的目标条带，表明NanoBiT实验所需的preS融合蛋白、阴性对照和阳性对照在技术上均可获得。
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.48\textwidth]{figures/result/fig12_a.png}
+  \includegraphics[width=0.48\textwidth]{figures/result/fig12_b.png}
+  \caption{NanoBiT相关构建体的小规模表达检测。四种融合蛋白在测试条件下均可检测到表达，为后续纯化和发光互补实验提供了基础。}
+  \label{fig:nanobit-expression-test}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.24\textwidth]{figures/result/fig13_a.png}
+  \includegraphics[width=0.35\textwidth]{figures/result/fig13_b.png}
+  \includegraphics[width=0.36\textwidth]{figures/result/fig13_c.png}
+  \par\medskip
+  \includegraphics[width=0.30\textwidth]{figures/result/fig13_d.png}
+  \includegraphics[width=0.62\textwidth]{figures/result/fig13_e.png}
+  \caption{HBVCp182-SmBiT的表达与纯化结果。目标蛋白可在洗脱组分中检测到，但纯度仍需进一步优化。}
+  \label{fig:hbvcp182-smbit-purification}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.48\textwidth]{figures/result/fig14_a.png}
+  \includegraphics[width=0.34\textwidth]{figures/result/fig14_b.png}
+  \caption{GST标记LgBiT融合蛋白及GST-SmBiT的表达纯化结果。相关对照蛋白和preS融合蛋白均可获得，为NanoBiT互作检测提供了实验材料。}
+  \label{fig:gst-lgbit-purification}
+\end{figure}
+
+在初步发光检测中，将LgBiT融合蛋白与SmBiT融合蛋白按1:1浓度比例混合，结果显示HBVCp182-SmBiT与含preS 87--114的LgBiT融合蛋白组合产生的发光信号持续高于阴性对照。与此同时，GST介导的阳性对照产生最高信号，说明NanoBiT报告系统本身具有可检测的上限窗口；仅含单一融合蛋白的孔接近基线，提示LgBiT和SmBiT自发互补造成的背景较低。该结果说明，NanoBiT体系能够将HBc与preS片段之间的接近事件转化为可检测的发光信号。
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.62\textwidth]{figures/result/fig15_a.png}
+  \caption{NanoBiT体系1:1浓度比例下的初步检测结果。HBVCp182-SmBiT与preS 87--114-LgBiT组合的发光信号高于阴性对照，阳性对照显示检测体系具有足够的信号上限。}
+  \label{fig:nanobit-one-to-one}
+\end{figure}
+
+进一步固定HBVCp182-SmBiT浓度为50 nM并滴定含preS 87--114的LgBiT融合蛋白时，实验组与阴性对照之间的分离随LgBiT-preS浓度升高而逐渐增强。实验组总发光信号呈浓度依赖性上升，扣除背景后的特异信号呈现趋于饱和的趋势，符合有限互作复合物形成的特征。定量结果显示，当LgBiT-preS终浓度为40、80和160 nM时，实验组发光信号分别约为3295.33、4873.67和7194.67 RLU，而对应阴性对照分别约为915.67、1561.67和2697.67 RLU。相应Z-factor分别为0.608、0.695和0.623，均超过0.5；20 nM条件下Z-factor约为0.485，处于临界范围。
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.32\textwidth]{figures/result/fig16_a.png}
+  \includegraphics[width=0.30\textwidth]{figures/result/fig16_b.png}
+  \includegraphics[width=0.30\textwidth]{figures/result/fig16_d.png}
+  \par\medskip
+  \includegraphics[width=0.46\textwidth]{figures/result/fig16_c.png}
+  \caption{固定HBVCp182-SmBiT浓度后的NanoBiT滴定结果。随着preS 87--114-LgBiT浓度升高，实验组与阴性对照逐渐分离，部分条件下Z-factor超过0.5，显示该体系具备后续定量比较的可行性。}
+  \label{fig:nanobit-fixed-core}
+\end{figure}
+
+上述结果表明，在合适蛋白浓度条件下，NanoBiT体系能够提供比ELISA更稳定的实验组--阴性对照分离度和更好的统计学窗口。尤其当LgBiT-preS浓度达到40 nM及以上时，该体系已具备进行后续定量比较的基础。结合ELISA结果，可以认为NanoBiT更适合作为本研究后续分析preS关键突变体和小分子抑制作用的主要检测平台。
+
+\section{本阶段结果小结}
+
+本阶段实验首先获得了可用于互作检测的HBVCp149核心蛋白，并系统比较了三种ELISA检测构型。结果显示，虽然通过StrepXT捕获preS或抗core Fab捕获HBc可以在一定程度上改善蛋白呈递方式，但ELISA体系始终受到非特异背景高、信号窗口窄和重复性不足的限制，未达到适合突变体比较或小分子筛选的要求。进一步建立的NanoBiT体系则能够在较少洗涤干扰的条件下检测HBVCp182与preS 87--114之间的相互作用，并在优化浓度下获得Z-factor大于0.5的检测窗口。
+
+因此，后续研究将以NanoBiT作为主要定量平台，进一步分析不同preS突变体以及不同浓度小分子抑制剂对HBc--preS相互作用的影响。相关结果将在后续章节中继续补充。
