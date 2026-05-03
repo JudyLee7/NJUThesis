@@ -49,7 +49,7 @@
 
 % 模板选项设置，包括个人信息、外观样式等
 % 较为冗长且一般不需要反复修改，我们把它放在单独的文件里
-\input{njuthesis-setup.def}
+\input{docs/njuthesis-setup.def}
 
 % 自行载入所需宏包
 % \usepackage{subcaption} % 嵌套小幅图像，比 subfig 和 subfigure 更新更好
@@ -58,6 +58,7 @@
 % \usepackage[version=4]{mhchem} % 绘制分子式
 % \usepackage{listings} % 展示代码
 % \usepackage{algorithm,algorithmic} % 展示算法伪代码
+\graphicspath{{docs/}}
 
 % 在导言区随意定制所需命令
 % \DeclareMathOperator{\spn}{span}
@@ -115,7 +116,9 @@
 %   \include{chapters/environments}
 % 本示例已经按章节拆分，可直接在 docs/chapters/ 中继续写作
 \include{docs/chapters/01-introduction}
-\include{docs/chapters/02-result}
+\include{docs/chapters/02-methods}
+\include{docs/chapters/03-result}
+\include{docs/chapters/04-summary}
 
 %---------------------------------------------------------------------
 %	参考文献

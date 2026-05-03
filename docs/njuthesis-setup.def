@@ -131,7 +131,7 @@
     % 默认为顺序编码制（numeric）
     % 可选著者-出版年制（author-year）
     %
-    resource = {njuthesis-sample.bib},
+    resource = {docs/njuthesis-sample.bib},
     % 参考文献数据源
     % 需要带扩展名的完整文件名
     % 可使用逗号分隔多个文件
