@@ -26,11 +26,11 @@
     % 作者英文姓名
     % 一般使用拼音
     %
-    keywords = {乙型肝炎,病毒,蛋白质互作},
+    keywords = {乙型肝炎病毒,乙肝病毒核心蛋白,乙肝表面抗原,蛋白质相互作用,病毒包膜化,NanoBiT},
     % 中文关键词列表
     % 使用英文半角逗号(,)分隔
     %
-    keywords* = {HBV,Virus,PPI},
+    keywords* = {HBV,HBc,HBsAg,PPI,viral envelopment,NanoBiT},
     % 英文关键词
     % 使用英文半角逗号(,)分隔
     %
