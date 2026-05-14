@@ -8,6 +8,31 @@
 
 总体技术路线包括四个层次：第一，表达并纯化HBVCp149、StrepXT、抗HBc抗体以及HBVCp182-SmBiT、LgBiT-preS等融合蛋白，为后续检测提供材料；第二，比较HBc直接包被、StrepXT捕获preS和抗HBc Fab捕获HBc三种ELISA模式，评估固相检测方法的适用性；第三，建立并优化NanoBiT体系，比较含foldon、不含foldon以及去除GST标签后的不同构建体条件；第四，利用优化后的体系检测Triton X-100、香叶醇等小分子以及preS R102A、H105A、W111A突变体对HBc--preS结合的影响。
 
+\begin{figure}[htbp]
+  \centering
+  \begin{minipage}{0.47\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{figures/methods/elisa_a.png}
+  \end{minipage}
+  \hfill
+  \begin{minipage}{0.47\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{figures/methods/elisa_b.png}
+  \end{minipage}
+  \par\medskip
+  \begin{minipage}{0.47\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{figures/methods/elisa_c.png}
+  \end{minipage}
+  \hfill
+  \begin{minipage}{0.47\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{figures/methods/nanobit.png}
+  \end{minipage}
+  \caption{HBc--preS相互作用检测构型示意。A，HBc直接包被ELISA：HBVCp149直接固定于酶标板后加入preS 87--114融合蛋白，并通过抗标签抗体及HRP显色体系检测preS结合信号。B，StrepXT捕获preS ELISA：StrepXT先固定于板面并捕获带Strep标签的preS 87--114融合蛋白，随后加入HBVCp149，并通过抗core抗体及HRP显色体系检测核心蛋白结合信号。C，抗core Fab捕获HBc ELISA：抗core Fab先固定于酶标板并捕获HBVCp149，随后加入preS 87--114融合蛋白，并通过抗GST抗体及HRP显色体系检测preS相关信号。D，NanoBiT发光互补检测：SmBiT连接于HBVCp182侧，LgBiT连接于preS 87--114侧；当HBc--preS相互作用使二者空间接近时，SmBiT与LgBiT互补形成NanoLuc活性，并在加入底物后产生发光信号。}
+  \label{fig:method-assay-formats}
+\end{figure}
+
 \section{重组蛋白表达、纯化与质量分析}
 
 \subsection{HBVCp149的表达与纯化}
@@ -44,26 +69,6 @@ NanoBiT体系中的另外三个构建体包括含preS 87--114片段的LgBiT融�
 
 \section{ELISA检测体系}
 
-\begin{figure}[htbp]
-  \centering
-  \begin{minipage}{0.32\textwidth}
-    \centering
-    \includegraphics[width=\textwidth]{figures/methods/elisa_a.png}
-  \end{minipage}
-  \hfill
-  \begin{minipage}{0.32\textwidth}
-    \centering
-    \includegraphics[width=\textwidth]{figures/methods/elisa_b.png}
-  \end{minipage}
-  \hfill
-  \begin{minipage}{0.32\textwidth}
-    \centering
-    \includegraphics[width=\textwidth]{figures/methods/elisa_c.png}
-  \end{minipage}
-  \caption{三种ELISA检测构型示意。A，HBc直接包被ELISA：HBVCp149直接固定于酶标板后加入preS 87--114融合蛋白，并通过抗标签抗体及HRP显色体系检测preS结合信号。B，StrepXT捕获preS ELISA：StrepXT先固定于板面并捕获带Strep标签的preS 87--114融合蛋白，随后加入HBVCp149，并通过抗core抗体及HRP显色体系检测核心蛋白结合信号。C，抗core Fab捕获HBc ELISA：抗core Fab先固定于酶标板并捕获HBVCp149，随后加入preS 87--114融合蛋白，并通过抗GST抗体及HRP显色体系检测preS相关信号。}
-  \label{fig:method-elisa-formats}
-\end{figure}
-
 \subsection{HBc直接包被ELISA}
 
 HBc直接包被ELISA用于评估preS与固定化HBc之间是否能够形成可检测结合。实验中将HBVCp149直接包被于酶标板，封闭后加入带标签的preS蛋白，再使用抗标签抗体和相应显色体系检测结合到板上的preS信号。
@@ -89,13 +94,6 @@ StrepXT捕获preS ELISA用于改善preS在固相表面的取向和可及性。�
 NanoBiT是一种基于NanoLuc荧光素酶片段互补的蛋白相互作用检测技术。该系统由较大的LgBiT片段和较小的SmBiT片段组成，二者自身亲和力较弱。当两个片段分别融合到待测蛋白上时，只有在待测蛋白发生相互作用并使LgBiT与SmBiT空间接近时，二者才会互补形成具有催化活性的荧光素酶，并在加入底物后产生发光信号。由于该方法不依赖多轮洗涤，且检测过程更接近溶液状态，因此适合用于HBc--preS这类较弱、可逆且可能受固定化影响的相互作用。
 
 在构建体设计上，考虑到较大的LgBiT可能干扰HBc组装，本研究将较小的SmBiT融合至HBVCp182，而将LgBiT融合至preS 87--114片段一侧。实验组为HBVCp182-SmBiT与LgBiT-preS 87--114组合；阴性对照为HBVCp182-SmBiT与不含preS的LgBiT融合蛋白组合；阳性对照利用GST标签二聚化特性，将GST-SmBiT与GST-LgBiT相关蛋白组合，用于确认NanoBiT报告系统本身具有可检测上限。
-
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=0.7\textwidth]{figures/methods/nanobit.png}
-  \caption{NanoBiT发光互补检测构型示意。D，该体系使用非感染性重组融合蛋白，将SmBiT连接于HBVCp182侧，将LgBiT连接于preS 87--114侧；当HBc--preS相互作用使二者空间接近时，SmBiT与LgBiT互补形成NanoLuc活性，并在加入底物后产生发光信号。}
-  \label{fig:method-nanobit}
-\end{figure}
 
 \subsection{NanoBiT蛋白表达预实验与组分制备}
 
