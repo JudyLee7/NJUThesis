@@ -8,31 +8,6 @@
 
 总体技术路线包括四个层次：第一，表达并纯化HBVCp149、StrepXT、抗HBc抗体以及HBVCp182-SmBiT、LgBiT-preS等融合蛋白，为后续检测提供材料；第二，比较HBc直接包被、StrepXT捕获preS和抗HBc Fab捕获HBc三种ELISA模式，评估固相检测方法的适用性；第三，建立并优化NanoBiT体系，比较含foldon、不含foldon以及去除GST标签后的不同构建体条件；第四，利用优化后的体系检测Triton X-100、香叶醇等小分子以及preS R102A、H105A、W111A突变体对HBc--preS结合的影响。
 
-\begin{figure}[htbp]
-  \centering
-  \begin{minipage}{0.47\textwidth}
-    \centering
-    \includegraphics[width=\textwidth]{figures/methods/elisa_a.png}
-  \end{minipage}
-  \hfill
-  \begin{minipage}{0.47\textwidth}
-    \centering
-    \includegraphics[width=\textwidth]{figures/methods/elisa_b.png}
-  \end{minipage}
-  \par\medskip
-  \begin{minipage}{0.47\textwidth}
-    \centering
-    \includegraphics[width=\textwidth]{figures/methods/elisa_c.png}
-  \end{minipage}
-  \hfill
-  \begin{minipage}{0.47\textwidth}
-    \centering
-    \includegraphics[width=\textwidth]{figures/methods/nanobit.png}
-  \end{minipage}
-  \caption{HBc--preS相互作用检测构型示意。A，HBc直接包被ELISA：HBVCp149直接固定于酶标板后加入preS 87--114融合蛋白，并通过抗标签抗体及HRP显色体系检测preS结合信号。B，StrepXT捕获preS ELISA：StrepXT先固定于板面并捕获带Strep标签的preS 87--114融合蛋白，随后加入HBVCp149，并通过抗core抗体及HRP显色体系检测核心蛋白结合信号。C，抗core Fab捕获HBc ELISA：抗core Fab先固定于酶标板并捕获HBVCp149，随后加入preS 87--114融合蛋白，并通过抗GST抗体及HRP显色体系检测preS相关信号。D，NanoBiT发光互补检测：SmBiT连接于HBVCp182侧，LgBiT连接于preS 87--114侧；当HBc--preS相互作用使二者空间接近时，SmBiT与LgBiT互补形成NanoLuc活性，并在加入底物后产生发光信号。}
-  \label{fig:method-assay-formats}
-\end{figure}
-
 \section{重组蛋白表达、纯化与质量分析}
 
 \subsection{HBVCp149的表达与纯化}
@@ -87,6 +62,31 @@ StrepXT捕获preS ELISA用于改善preS在固相表面的取向和可及性。�
 
 实验中先滴定HBVCp149以确定Fab捕获效率和合适核心蛋白浓度，再在固定HBc条件下滴定preS，并设置无HBc和HRP-only等对照以评估背景来源。
 
+\begin{figure}[htbp]
+  \centering
+  \begin{minipage}{0.42\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{figures/methods/elisa_a.png}
+  \end{minipage}
+  \hfill
+  \begin{minipage}{0.42\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{figures/methods/elisa_b.png}
+  \end{minipage}
+  \par\medskip
+  \begin{minipage}{0.46\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{figures/methods/elisa_c.png}
+  \end{minipage}
+  \hfill
+  \begin{minipage}{0.42\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{figures/methods/nanobit.png}
+  \end{minipage}
+  \caption{HBc--preS相互作用检测模式示意。A，HBc直接包被ELISA：HBVCp149直接固定于酶标板后加入preS 87--114融合蛋白，并通过抗标签抗体及HRP显色体系检测preS结合信号。B，StrepXT捕获preS ELISA：StrepXT先固定于板面并捕获带Strep标签的preS 87--114融合蛋白，随后加入HBVCp149，并通过抗core抗体及HRP显色体系检测核心蛋白结合信号。C，抗core Fab捕获HBc ELISA：抗core Fab先固定于酶标板并捕获HBVCp149，随后加入preS 87--114融合蛋白，并通过抗GST抗体及HRP显色体系检测preS相关信号。D，NanoBiT发光互补检测：SmBiT连接于HBVCp182侧，LgBiT连接于preS 87--114侧；当HBc--preS相互作用使二者空间接近时，SmBiT与LgBiT互补形成NanoLuc活性，并在加入底物后产生发光信号。}
+  \label{fig:method-assay-formats}
+\end{figure}
+
 \section{NanoBiT发光互补检测}
 
 \subsection{NanoBiT检测原理与构建体设计}
@@ -95,17 +95,11 @@ NanoBiT是一种基于NanoLuc荧光素酶片段互补的蛋白相互作用检测
 
 在构建体设计上，考虑到较大的LgBiT可能干扰HBc组装，本研究将较小的SmBiT融合至HBVCp182，而将LgBiT融合至preS 87--114片段一侧。实验组为HBVCp182-SmBiT与LgBiT-preS 87--114组合；阴性对照为HBVCp182-SmBiT与不含preS的LgBiT融合蛋白组合；阳性对照利用GST标签二聚化特性，将GST-SmBiT与GST-LgBiT相关蛋白组合，用于确认NanoBiT报告系统本身具有可检测上限。
 
-\subsection{NanoBiT蛋白表达预实验与组分制备}
-
-为确定NanoBiT构建体的表达条件，首先进行小规模表达检测。将相关质粒转化至NiCo21感受态细胞，在10 mL LB培养基中培养至OD$_{600}$为0.6--0.8后，加入200 \textmu M IPTG诱导4 h。收集菌体后用TBS洗涤，使用含Tris、NaCl和PMSF的裂解缓冲液重悬，并在冰浴中超声破碎。离心后分别收集总样和上清样品，经SDS-PAGE和考马斯亮蓝染色判断表达水平和可溶性。根据表达检测结果，选择37 ℃诱导4 h作为后续主要表达条件。
-
-正式NanoBiT实验前，分别纯化核心蛋白侧构建体、LgBiT-preS融合蛋白、LgBiT阴性对照和阳性对照蛋白，并用SDS-PAGE评估目标条带。对于HBVCp182-\allowbreak{}SmBiT，后续优先使用重新Q柱纯化并经Western blot确认的样品；对于LgBiT侧蛋白，分别比较含foldon、不含foldon以及去除GST标签后的不同版本，以评估多价效应和标签二聚化对检测体系的影响。
-
 \subsection{NanoBiT发光检测流程}
 
-NanoBiT检测在白色384孔板中进行。实验前将LgBiT融合蛋白和SmBiT融合蛋白分别用含0.1\% BSA的TBS稀释为2$\times$工作液。常规反应中，将10 \textmu L LgBiT侧蛋白与10 \textmu L SmBiT侧蛋白混合，使总体积为20 \textmu L。混合后短暂离心，并在室温孵育约10 min。随后加入20 \textmu L新鲜配制的Nano-Glo底物工作液，底物与缓冲液按1:50配制。加样后振荡约10 s，在室温孵育3--5 min，并使用酶标仪读取发光信号，积分时间设为1000 ms。
+NanoBiT检测在白色384孔板中进行。实验前将LgBiT融合蛋白和SmBiT融合蛋白分别用TBS稀释为合适浓度。常规反应中，将10 \textmu L LgBiT融合蛋白与10 \textmu L SmBiT融合蛋白混合，使总体积为20 \textmu L。混合后短暂离心，并在室温孵育约10 min。随后加入20 \textmu L新鲜配制的Nano-Glo底物工作液，底物与缓冲液按1:50配制。加样后振荡约10 s，在室温孵育3--5 min，并使用酶标仪读取发光信号，积分时间设为1000 ms。
 
-初始NanoBiT实验中，LgBiT与SmBiT侧蛋白按1:1浓度比例混合，以判断实验组、阴性对照和阳性对照之间是否存在可分辨信号。优化实验中固定HBVCp182-SmBiT终浓度为50 nM，并滴定LgBiT-preS或LgBiT阴性对照蛋白。后续重新纯化HBVCp182-SmBiT后，将Q柱不同合并组分分别与80 nM含foldon的LgBiT-preS或LgBiT阴性对照反应，以评估不同核心蛋白组分的NanoBiT活性。
+初始NanoBiT实验中，LgBiT与SmBiT蛋白按1:1浓度比例混合，以判断实验组、阴性对照和阳性对照之间是否存在可分辨信号。优化实验中固定HBVCp182-SmBiT的终浓度，并滴定LgBiT-preS或LgBiT阴性对照蛋白。
 
 \section{小分子抑制、突变体比较与数据分析}
 
@@ -113,11 +107,11 @@ NanoBiT检测在白色384孔板中进行。实验前将LgBiT融合蛋白和SmBiT
 
 小分子抑制实验用于评估候选分子是否能够削弱HBc--preS相互作用。本文检测的小分子包括Triton X-100、NP-40和香叶醇。含foldon体系中，先根据NanoBiT滴定结果选择80 nM GST-LgBiT-preS 87--114-foldon-strep-His作为工作浓度，并使用相同浓度的GST-LgBiT-foldon-strep-His作为阴性对照。初筛实验中，将小分子按浓度梯度加入NanoBiT反应体系后检测发光信号。由于直接加药条件下抑制趋势不够稳定，后续实验改为先将小分子与HBVCp182-SmBiT预孵育约2 h，再加入LgBiT-preS或LgBiT阴性对照进行检测，并适当提高小分子浓度范围。
 
-为降低foldon三聚化导致的多价效应，后续使用不含foldon的GST-LgBiT-preS 87--114-His和GST-LgBiT-His重复抑制实验。根据不含foldon体系下的NanoBiT滴定结果，选择1000 nM LgBiT侧蛋白作为小分子抑制实验工作浓度。实验中同步检测实验组和阴性对照组，并在分析时扣除或比较阴性对照背景，以判断小分子对HBc--preS特异性信号的影响。
+为降低foldon三聚化导致的多价效应，后续使用不含foldon的GST-LgBiT-preS 87--114-His和GST-LgBiT-His重复抑制实验。根据不含foldon体系下的NanoBiT滴定结果，选择1000 nM LgBiT蛋白作为小分子抑制实验工作浓度。实验中同步检测实验组和阴性对照组，并在分析时扣除或比较阴性对照背景，以判断小分子对HBc--preS特异性信号的影响。
 
 \subsection{preS突变体结合能力比较}
 
-为验证结构模型中关键残基对HBc结合的贡献，本研究比较wild-type preS 87--114及R102A、H105A和W111A突变体的NanoBiT信号。由于foldon和GST标签可能带来多价结合或非目标性二聚化，突变体比较优先使用去除foldon并经PPase切除GST标签后的LgBiT-preS蛋白。实验中固定HBVCp182-SmBiT，并滴定不同LgBiT-preS突变体蛋白，同时设置LgBiT阴性对照。通过比较不同突变体在同一浓度范围内的发光信号强度和相对趋势，判断各残基对HBc--preS相互作用的贡献。
+为验证结构模型中关键残基对HBc结合的贡献，本研究比较wild-type preS 87--114及R102A、H105A和W111A突变体的NanoBiT信号。由于foldon和GST标签可能带来多价结合或非目标性二聚化，突变体比较优先使用去除foldon后的LgBiT-preS蛋白。实验中固定HBVCp182-SmBiT，并滴定不同LgBiT-preS突变体蛋白，同时设置LgBiT阴性对照。通过比较不同突变体在同一浓度范围内的发光信号强度和相对趋势，判断各残基对HBc--preS相互作用的贡献。
 
 \subsection{数据处理与评价指标}
 
