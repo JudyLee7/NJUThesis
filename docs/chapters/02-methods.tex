@@ -44,18 +44,31 @@ NanoBiT体系中的另外三个构建体包括含preS 87--114片段的LgBiT融�
 
 \section{ELISA检测体系}
 
+\begin{figure}[htbp]
+  \centering
+  \begin{minipage}{0.32\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{figures/methods/elisa_a.png}
+  \end{minipage}
+  \hfill
+  \begin{minipage}{0.32\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{figures/methods/elisa_b.png}
+  \end{minipage}
+  \hfill
+  \begin{minipage}{0.32\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{figures/methods/elisa_c.png}
+  \end{minipage}
+  \caption{三种ELISA检测构型示意。A，HBc直接包被ELISA：HBVCp149直接固定于酶标板后加入preS 87--114融合蛋白，并通过抗标签抗体及HRP显色体系检测preS结合信号。B，StrepXT捕获preS ELISA：StrepXT先固定于板面并捕获带Strep标签的preS 87--114融合蛋白，随后加入HBVCp149，并通过抗core抗体及HRP显色体系检测核心蛋白结合信号。C，抗core Fab捕获HBc ELISA：抗core Fab先固定于酶标板并捕获HBVCp149，随后加入preS 87--114融合蛋白，并通过抗GST抗体及HRP显色体系检测preS相关信号。}
+  \label{fig:method-elisa-formats}
+\end{figure}
+
 \subsection{HBc直接包被ELISA}
 
 HBc直接包被ELISA用于评估preS与固定化HBc之间是否能够形成可检测结合。实验中将HBVCp149直接包被于酶标板，封闭后加入带标签的preS蛋白，再使用抗标签抗体和相应显色体系检测结合到板上的preS信号。
 
 首先对HBVCp149包被浓度进行滴定，并用Langmuir单点吸附模型拟合总信号和特异信号，以确定后续实验的工作包被浓度。随后在固定HBVCp149条件下滴定preS，并设置无HBc包被对照，以区分HBc依赖性信号和preS或抗体的非特异吸附背景。
-
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=0.6\textwidth]{figures/methods/elisa_a.png}
-  \caption{HBc直接包被ELISA的检测构型示意。A，HBVCp149直接固定于酶标板后加入preS 87--114融合蛋白，并通过抗标签抗体及HRP显色体系检测preS结合信号。}
-  \label{fig:method-elisa-a}
-\end{figure}
 
 \subsection{StrepXT捕获preS ELISA}
 
@@ -63,25 +76,11 @@ StrepXT捕获preS ELISA用于改善preS在固相表面的取向和可及性。�
 
 实验流程中首先优化StrepXT包被和preS捕获条件，随后对preS进行浓度滴定，并使用Langmuir模型拟合捕获曲线。根据preS捕获饱和趋势确定工作浓度后，进一步滴定HBVCp149并比较实验组与无preS对照组的信号差异。为提高核心蛋白检测灵敏度，后续实验使用纯化得到的抗core IgG D4替代初始检测抗体。
 
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=0.6\textwidth]{figures/methods/elisa_b.png}
-  \caption{StrepXT捕获preS ELISA的检测构型示意。B，StrepXT先固定于板面并捕获带Strep标签的preS 87--114融合蛋白，随后加入HBVCp149，并通过抗core抗体及HRP显色体系检测核心蛋白结合信号。}
-  \label{fig:method-elisa-b}
-\end{figure}
-
 \subsection{抗core Fab捕获HBc ELISA}
 
 抗core Fab捕获HBc ELISA用于改善HBc固定化方式。实验中先将抗core Fab包被于酶标板，随后加入HBVCp149使核心颗粒被抗体捕获，再加入preS蛋白，并通过抗GST抗体检测preS信号。该构型避免HBc直接吸附到塑料表面，理论上有利于保留核心颗粒构象。
 
 实验中先滴定HBVCp149以确定Fab捕获效率和合适核心蛋白浓度，再在固定HBc条件下滴定preS，并设置无HBc和HRP-only等对照以评估背景来源。
-
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=0.6\textwidth]{figures/methods/elisa_c.png}
-  \caption{抗core Fab捕获HBc ELISA的检测构型示意。C，抗core Fab先固定于酶标板并捕获HBVCp149，随后加入preS 87--114融合蛋白，并通过抗GST抗体及HRP显色体系检测preS相关信号。}
-  \label{fig:method-elisa-c}
-\end{figure}
 
 \section{NanoBiT发光互补检测}
 
