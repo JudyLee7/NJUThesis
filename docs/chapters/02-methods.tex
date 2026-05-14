@@ -4,15 +4,15 @@
 
 本研究旨在建立一种能够定量反映HBV核心蛋白（HBc）与HBsAg preS区域相互作用的体外检测体系，并进一步用于preS关键突变体和候选小分子抑制剂的比较分析。为保证实验过程安全可控，本文所有实验均基于非感染性重组蛋白、人工构建的融合蛋白和体外发光检测体系展开，不涉及感染性HBV颗粒扩增、病毒传播能力增强或细胞感染模型。实验关注的对象是HBc与preS片段之间的物理相互作用，而不是完整病毒复制过程。
 
-根据结构研究结果，preS 87--114片段所在的基质样结构域（matrix domain, MD）是preS识别HBV核衣壳的关键区域。围绕这一界面，本研究首先尝试建立ELISA检测体系，以比较不同固定化方式对HBc--preS互作读数的影响；随后转向NanoBiT发光互补体系，在接近溶液状态的条件下检测HBVCp182与preS 87--114片段之间的空间接近。通过逐步优化蛋白纯化、构建体设计、对照设置和检测条件，本研究最终将NanoBiT作为后续小分子抑制和preS突变体比较的主要方法。
+根据结构研究结果，preS 87--114片段所在的基质样结构域（matrix domain, MD）是preS识别HBV核衣壳的关键区域。围绕这一界面，本研究首先尝试建立ELISA检测体系，以比较不同固定化方式对HBc--preS互作读数的影响；随后转向NanoBiT发光互补体系，在溶液状态下检测HBVCp182与preS 87--114片段之间的空间接近。通过逐步优化蛋白纯化、构建体设计、对照设置和检测条件，本研究最终将NanoBiT作为后续小分子抑制和preS突变体比较的主要方法。
 
-总体技术路线包括四个层次：第一，表达并纯化HBVCp149、HBVCp182-SmBiT、StrepXT、抗core抗体以及不同LgBiT-preS融合蛋白，为后续检测提供材料；第二，比较HBc直接包被、StrepXT捕获preS和抗core Fab捕获HBc三种ELISA构型，评估固相检测方法的适用性；第三，建立并优化NanoBiT体系，比较含foldon、不含foldon以及去除GST标签后的不同构建体条件；第四，利用优化后的体系检测Triton X-100、NP-40、香叶醇等小分子以及preS R102A、H105A、W111A突变体对HBc--preS结合的影响。
+总体技术路线包括四个层次：第一，表达并纯化HBVCp149、StrepXT、抗HBc抗体以及HBVCp182-SmBiT、LgBiT-preS等融合蛋白，为后续检测提供材料；第二，比较HBc直接包被、StrepXT捕获preS和抗HBc Fab捕获HBc三种ELISA模式，评估固相检测方法的适用性；第三，建立并优化NanoBiT体系，比较含foldon、不含foldon以及去除GST标签后的不同构建体条件；第四，利用优化后的体系检测Triton X-100、香叶醇等小分子以及preS R102A、H105A、W111A突变体对HBc--preS结合的影响。
 
 \section{重组蛋白表达、纯化与质量分析}
 
 \subsection{HBVCp149的表达与纯化}
 
-HBVCp149用于ELISA中的核心蛋白包被或捕获实验。将HBV core表达质粒转化至\textit{E. coli} NiCo21(DE3)感受态细胞，在含相应抗生素的LB培养基中培养。当菌液OD$_{600}$达到0.6--0.8时，加入200 \textmu M IPTG诱导表达，并在37 ℃继续培养4 h。收集菌体后用TBS洗涤，并以含PMSF、溶菌酶、benzonase和MgCl$_2$的裂解缓冲液重悬。样品经反复冻融裂解后离心去除不溶物。
+HBVCp149用于ELISA中的核心蛋白包被或捕获实验。将HBV core表达质粒转化至\textit{E. coli} NiCo21(DE3)感受态细胞，在含相应抗生素的LB培养基中培养。当菌液OD$_{600}$达到0.6--0.8时，加入200 \textmu M IPTG诱导表达，并在37 ℃继续培养4 h。收集菌体后用TBS洗涤，并以含PMSF、溶菌酶、核酸酶和MgCl$_2$的裂解缓冲液重悬。样品经反复冻融裂解后离心去除不溶物。
 
 澄清上清首先进行硫酸铵分级沉淀。通过加入3.5 M硫酸铵溶液，将体系硫酸铵浓度调至15\%，去除部分杂质；随后继续提高至45\%，沉淀HBV核心蛋白颗粒。沉淀用20 mM Tris（pH 8.0）重悬后，经Q HP阴离子交换柱进一步纯化。层析使用ÄKTA系统，以低盐缓冲液上样，并用含1 M NaCl的Q-B缓冲液进行线性梯度洗脱。收集含HBVCp149的组分，用SDS-PAGE评估纯度后合并，用于后续ELISA实验。
 
@@ -20,25 +20,25 @@ HBVCp149用于ELISA中的核心蛋白包被或捕获实验。将HBV core表达�
 
 StrepXT用于定向捕获带Strep标签的preS蛋白。将StrepXT表达质粒转化至\textit{E. coli} NiCo21-pLysS细胞，在含卡那霉素和氯霉素的LB培养基中培养。当OD$_{600}$达到0.6--0.8时，加入1 mM IPTG诱导，并在37 ℃培养4 h。收集菌体后用含EDTA的TBS洗涤并冻存。
 
-纯化时将菌体沉淀在含EDTA和Triton X-100的Tris缓冲液中重悬，经冻融、benzonase处理和超声破碎后离心。StrepXT主要以包涵体形式存在，因此对沉淀进行洗涤后，用6 M盐酸胍在酸性条件下溶解，并通过透析逐步复性。复性后的样品经离心和过滤后上样至Q柱，以NaCl梯度洗脱。含目标条带的组分经SDS-PAGE确认后用于后续实验。为确认StrepXT复性后仍具备功能，进一步测定其Strep标签结合能力，并据此确定其可用于preS捕获ELISA。
+纯化时将菌体沉淀在含EDTA和Triton X-100的Tris缓冲液中重悬，经冻融、核酸酶处理和超声破碎后离心。StrepXT主要以包涵体形式存在，因此对沉淀进行洗涤后，用6 M盐酸胍在酸性条件下溶解，并通过透析逐步复性。复性后的样品经离心和过滤后上样至Q柱，以NaCl梯度洗脱。含目标条带的组分经SDS-PAGE确认后用于后续实验。为确认StrepXT复性后仍具备功能，进一步测定其Strep标签结合能力，并据此确定其可用于preS捕获ELISA。
 
-\subsection{抗core IgG与Fab相关材料}
+\subsection{抗HBc IgG的转染与纯化}
 
-为改善ELISA中核心蛋白检测或捕获步骤，本研究使用抗core抗体材料。抗core IgG通过重链和轻链质粒共转染OPM细胞获得。转染后12--24 h加入丁酸钠促进表达，并继续培养约5 d。收集细胞培养上清后，加入咪唑、Tris和NaCl调节缓冲条件，并使用Ni-NTA树脂进行纯化。样品经上样、流穿回收、低浓度咪唑洗涤和高浓度咪唑洗脱后，收集洗脱组分。纯化产物通过还原和非还原SDS-PAGE分析，以判断重链、轻链和完整IgG条带是否符合预期。合并的IgG洗脱组分经浓缩和换液后用于ELISA检测。
+为改善ELISA中核心蛋白检测或捕获步骤，本研究使用抗HBc抗体材料。抗HBc IgG通过重链和轻链质粒共转染OPM细胞获得。转染后12--24 h加入丁酸钠促进表达，并继续培养约5 d。收集细胞培养上清后，加入咪唑、Tris和NaCl调节缓冲条件，并使用Ni-NTA树脂进行纯化。样品经上样、流穿回收、低浓度咪唑洗涤和高浓度咪唑洗脱后，收集洗脱组分。纯化产物通过还原和非还原SDS-PAGE分析，以判断重链、轻链和完整IgG条带是否符合预期。合并的IgG洗脱组分经浓缩和换液后用于ELISA检测。
 
-抗core Fab用于ELISA format C中捕获HBVCp149。该策略的目的在于避免HBc直接吸附于塑料表面，从而尽量保留核心颗粒构象和表面互作界面。实验中先以抗core Fab包被酶标板，再捕获HBVCp149，随后加入preS蛋白并检测preS信号。
-
-\subsection{HBVCp182-SmBiT的表达、纯化与重新纯化}
+\subsection{HBVCp182-SmBiT融合蛋白的表达与纯化}
 
 核心蛋白侧构建体记为HBVCp182-\allowbreak{}SmBiT。将编码该融合蛋白的质粒转化至\textit{E. coli} NiCo21细胞，在含氨苄青霉素的LB培养基中培养。当OD$_{600}$达到0.6--0.8时，用200 \textmu M IPTG诱导表达，37 ℃培养4 h。收集菌体后用TBS洗涤，并可经液氮速冻后保存于-80 ℃。
 
-初始纯化采用冻融裂解、硫酸铵分级沉淀和SP阳离子交换柱。菌体沉淀用含PMSF、溶菌酶、benzonase和MgCl$_2$的TBS裂解缓冲液重悬，经冻融裂解后离心。上清经硫酸铵沉淀富集目标蛋白，沉淀用20 mM Tris（pH 8.0）重悬，并稀释降低电导后上样至SP柱，以盐梯度洗脱。由于初始批次纯度仍有限，后续实验中进一步采用Q HP阴离子交换柱重新纯化HBVCp182-SmBiT。重新纯化后的组分通过SDS-PAGE和anti-HBcAg Western blot确认目标条带，并通过NanoBiT活性比较筛选可用于后续实验的合并组分。
+初始纯化采用冻融裂解、硫酸铵分级沉淀和SP阳离子交换柱。菌体沉淀用含PMSF、溶菌酶、核酸酶和MgCl$_2$的TBS裂解缓冲液重悬，经冻融裂解后离心。上清经硫酸铵沉淀富集目标蛋白，沉淀用20 mM Tris（pH 8.0）重悬，并稀释降低电导后上样至Q HP阴离子交换柱，以盐梯度洗脱。纯化后的组分通过SDS-PAGE和anti-HBcAg Western blot确认目标条带，并通过NanoBiT活性比较筛选可用于后续实验的合并组分。
 
-\subsection{LgBiT-preS融合蛋白、阴性对照和GST-SmBiT的制备}
+\subsection{LgBiT-preS融合蛋白、阴性对照和阳性对照的制备}
 
-NanoBiT体系中的preS侧构建体包括含preS 87--114片段的LgBiT融合蛋白、不含preS的LgBiT阴性对照以及GST-SmBiT阳性对照相关蛋白。早期实验使用含foldon结构域的GST-LgBiT-preS 87--114-foldon-strep-His和对应的GST-LgBiT-foldon-strep-His阴性对照，以增强preS片段的多价呈递。考虑到foldon三聚化和GST二聚化可能影响表观结合强度，后续进一步构建不含foldon的GST-LgBiT-preS 87--114-His和GST-LgBiT-His。
+NanoBiT体系中的另外三个构建体包括含preS 87--114片段的LgBiT融合蛋白作为实验组、不含preS的LgBiT作为阴性对照以及GST-SmBiT作为阳性对照相关蛋白。早期实验使用含foldon结构域的GST-LgBiT-preS 87--114-foldon-strep-His和对应的GST-LgBiT-foldon-strep-His阴性对照，以增强preS片段的多价呈递。考虑到foldon三聚化和GST二聚化可能影响表观结合强度，后续进一步构建不含foldon的GST-LgBiT-preS 87--114-His和GST-LgBiT-His。
 
-GST标记融合蛋白均在\textit{E. coli} NiCo21中表达。菌液OD$_{600}$达到0.6--0.8后加入200 \textmu M IPTG，在37 ℃诱导4 h。收集菌体后以含Tris、NaCl、PMSF、benzonase和MgCl$_2$的裂解缓冲液重悬，并在冰浴中超声破碎。离心澄清后，上清上样至GST亲和柱。柱子经高盐缓冲液和TBS洗涤后，用含还原型谷胱甘肽的洗脱缓冲液洗脱目标蛋白。对于GST-LgBiT-His回收效率较低的情况，从GST柱流穿液出发，进一步通过Ni柱富集His标签蛋白，并使用Q HP柱纯化，以获得足量阴性对照蛋白。
+三种GST标记融合蛋白均在\textit{E. coli} NiCo21中表达。菌液OD$_{600}$达到0.6--0.8后加入200 \textmu M IPTG，在16 ℃诱导12 h。收集菌体后以含Tris、NaCl、PMSF、核酸酶和MgCl$_2$的裂解缓冲液重悬，并在冰浴中超声破碎。离心澄清后，上清上样至GST亲和柱。柱子经高盐缓冲液和TBS洗涤后，用含还原型谷胱甘肽的洗脱缓冲液洗脱目标蛋白。
+
+对于GST-LgBiT-preS 87--114-His和GST-LgBiT-His回收效率较低的情况，改进纯化方法，依次通过Ni亲和柱和Q HP阴离子交换柱得到纯化蛋白，以获得足量实验组和阴性对照蛋白。
 
 为降低GST二聚化对NanoBiT读数的影响，部分GST-LgBiT融合蛋白进一步使用PPase进行酶切去除GST标签。酶切前后样品通过SDS-PAGE比较迁移率变化，并根据GST、LgBiT-preS和LgBiT相关条带判断酶切是否成功。去除GST标签后的蛋白用于preS野生型与突变体结合能力比较。
 
@@ -46,33 +46,39 @@ GST标记融合蛋白均在\textit{E. coli} NiCo21中表达。菌液OD$_{600}$�
 
 \subsection{HBc直接包被ELISA}
 
-HBc直接包被ELISA用于评估preS与固定化HBc颗粒之间是否能够形成可检测结合。实验中将HBVCp149直接包被于酶标板，封闭后加入带标签的preS蛋白，再使用抗标签抗体和相应显色体系检测结合到板上的preS信号。首先对HBVCp149包被浓度进行滴定，并用Langmuir单点吸附模型拟合总信号和特异信号，以确定后续实验的工作包被浓度。随后在固定HBVCp149条件下滴定preS，并设置无HBc包被对照，以区分HBc依赖性信号和preS或抗体的非特异吸附背景。
+HBc直接包被ELISA用于评估preS与固定化HBc之间是否能够形成可检测结合。实验中将HBVCp149直接包被于酶标板，封闭后加入带标签的preS蛋白，再使用抗标签抗体和相应显色体系检测结合到板上的preS信号。
+
+首先对HBVCp149包被浓度进行滴定，并用Langmuir单点吸附模型拟合总信号和特异信号，以确定后续实验的工作包被浓度。随后在固定HBVCp149条件下滴定preS，并设置无HBc包被对照，以区分HBc依赖性信号和preS或抗体的非特异吸附背景。
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.76\textwidth]{figures/methods/elisa_a.png}
+  \includegraphics[width=0.6\textwidth]{figures/methods/elisa_a.png}
   \caption{HBc直接包被ELISA的检测构型示意。A，HBVCp149直接固定于酶标板后加入preS 87--114融合蛋白，并通过抗标签抗体及HRP显色体系检测preS结合信号。}
   \label{fig:method-elisa-a}
 \end{figure}
 
 \subsection{StrepXT捕获preS ELISA}
 
-StrepXT捕获preS ELISA用于改善preS在固相表面的取向和可及性。实验中先以StrepXT包被酶标板，封闭后加入带Strep标签的preS蛋白，使preS通过标签被定向捕获；随后加入HBVCp149，并利用抗core抗体检测结合到preS上的核心蛋白。实验流程中首先优化StrepXT包被和preS捕获条件，随后对preS进行浓度滴定，并使用Langmuir模型拟合捕获曲线。根据preS捕获饱和趋势确定工作浓度后，进一步滴定HBVCp149并比较实验组与0 nM preS对照组的信号差异。为提高核心蛋白检测灵敏度，后续实验使用纯化得到的抗core IgG D4替代初始检测抗体。
+StrepXT捕获preS ELISA用于改善preS在固相表面的取向和可及性。实验中先以StrepXT包被酶标板，封闭后加入带Strep标签的preS蛋白，使preS通过标签被定向捕获；随后加入HBVCp149，并利用抗core抗体检测结合到preS上的核心蛋白。
+
+实验流程中首先优化StrepXT包被和preS捕获条件，随后对preS进行浓度滴定，并使用Langmuir模型拟合捕获曲线。根据preS捕获饱和趋势确定工作浓度后，进一步滴定HBVCp149并比较实验组与无preS对照组的信号差异。为提高核心蛋白检测灵敏度，后续实验使用纯化得到的抗core IgG D4替代初始检测抗体。
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.76\textwidth]{figures/methods/elisa_b.png}
+  \includegraphics[width=0.6\textwidth]{figures/methods/elisa_b.png}
   \caption{StrepXT捕获preS ELISA的检测构型示意。B，StrepXT先固定于板面并捕获带Strep标签的preS 87--114融合蛋白，随后加入HBVCp149，并通过抗core抗体及HRP显色体系检测核心蛋白结合信号。}
   \label{fig:method-elisa-b}
 \end{figure}
 
 \subsection{抗core Fab捕获HBc ELISA}
 
-抗core Fab捕获HBc ELISA用于改善HBc固定化方式。实验中先将抗core Fab包被于酶标板，随后加入HBVCp149使核心颗粒被抗体捕获，再加入preS蛋白，并通过抗GST抗体检测preS信号。该构型避免HBc直接吸附到塑料表面，理论上有利于保留核心颗粒构象。实验中先滴定HBVCp149以确定Fab捕获效率和合适核心蛋白浓度，再在固定HBc条件下滴定preS，并设置无HBc和HRP-only等对照以评估背景来源。
+抗core Fab捕获HBc ELISA用于改善HBc固定化方式。实验中先将抗core Fab包被于酶标板，随后加入HBVCp149使核心颗粒被抗体捕获，再加入preS蛋白，并通过抗GST抗体检测preS信号。该构型避免HBc直接吸附到塑料表面，理论上有利于保留核心颗粒构象。
+
+实验中先滴定HBVCp149以确定Fab捕获效率和合适核心蛋白浓度，再在固定HBc条件下滴定preS，并设置无HBc和HRP-only等对照以评估背景来源。
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.76\textwidth]{figures/methods/elisa_c.png}
+  \includegraphics[width=0.6\textwidth]{figures/methods/elisa_c.png}
   \caption{抗core Fab捕获HBc ELISA的检测构型示意。C，抗core Fab先固定于酶标板并捕获HBVCp149，随后加入preS 87--114融合蛋白，并通过抗GST抗体及HRP显色体系检测preS相关信号。}
   \label{fig:method-elisa-c}
 \end{figure}
@@ -87,7 +93,7 @@ NanoBiT是一种基于NanoLuc荧光素酶片段互补的蛋白相互作用检测
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.72\textwidth]{figures/methods/nanobit.png}
+  \includegraphics[width=0.7\textwidth]{figures/methods/nanobit.png}
   \caption{NanoBiT发光互补检测构型示意。D，该体系使用非感染性重组融合蛋白，将SmBiT连接于HBVCp182侧，将LgBiT连接于preS 87--114侧；当HBc--preS相互作用使二者空间接近时，SmBiT与LgBiT互补形成NanoLuc活性，并在加入底物后产生发光信号。}
   \label{fig:method-nanobit}
 \end{figure}
