@@ -44,6 +44,13 @@ GST标记融合蛋白均在\textit{E. coli} NiCo21中表达。菌液OD$_{600}$�
 
 \section{ELISA检测体系}
 
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.96\textwidth]{figures/methods/elisa_ab.png}
+  \caption{HBc直接包被ELISA与StrepXT捕获preS ELISA的检测构型示意。A，HBc直接包被ELISA：HBVCp149固定于酶标板后加入preS 87--114融合蛋白，并通过抗标签抗体及HRP显色体系检测preS结合信号。B，StrepXT捕获preS ELISA：StrepXT先固定于板面并捕获带Strep标签的preS 87--114融合蛋白，随后加入HBVCp149，并通过抗core抗体及HRP显色体系检测核心蛋白结合信号。}
+  \label{fig:method-elisa-ab}
+\end{figure}
+
 \subsection{HBc直接包被ELISA}
 
 HBc直接包被ELISA用于评估preS与固定化HBc颗粒之间是否能够形成可检测结合。实验中将HBVCp149直接包被于酶标板，封闭后加入带标签的preS蛋白，再使用抗标签抗体和相应显色体系检测结合到板上的preS信号。首先对HBVCp149包被浓度进行滴定，并用Langmuir单点吸附模型拟合总信号和特异信号，以确定后续实验的工作包被浓度。随后在固定HBVCp149条件下滴定preS，并设置无HBc包被对照，以区分HBc依赖性信号和preS或抗体的非特异吸附背景。
@@ -56,6 +63,13 @@ StrepXT捕获preS ELISA用于改善preS在固相表面的取向和可及性。�
 
 抗core Fab捕获HBc ELISA用于改善HBc固定化方式。实验中先将抗core Fab包被于酶标板，随后加入HBVCp149使核心颗粒被抗体捕获，再加入preS蛋白，并通过抗GST抗体检测preS信号。该构型避免HBc直接吸附到塑料表面，理论上有利于保留核心颗粒构象。实验中先滴定HBVCp149以确定Fab捕获效率和合适核心蛋白浓度，再在固定HBc条件下滴定preS，并设置无HBc和HRP-only等对照以评估背景来源。
 
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.76\textwidth]{figures/methods/elisa_c.png}
+  \caption{抗core Fab捕获HBc ELISA的检测构型示意。C，抗core Fab先固定于酶标板并捕获HBVCp149，随后加入preS 87--114融合蛋白，并通过抗GST抗体及HRP显色体系检测preS相关信号。}
+  \label{fig:method-elisa-c}
+\end{figure}
+
 \section{NanoBiT发光互补检测}
 
 \subsection{NanoBiT检测原理与构建体设计}
@@ -63,6 +77,13 @@ StrepXT捕获preS ELISA用于改善preS在固相表面的取向和可及性。�
 NanoBiT是一种基于NanoLuc荧光素酶片段互补的蛋白相互作用检测技术。该系统由较大的LgBiT片段和较小的SmBiT片段组成，二者自身亲和力较弱。当两个片段分别融合到待测蛋白上时，只有在待测蛋白发生相互作用并使LgBiT与SmBiT空间接近时，二者才会互补形成具有催化活性的荧光素酶，并在加入底物后产生发光信号。由于该方法不依赖多轮洗涤，且检测过程更接近溶液状态，因此适合用于HBc--preS这类较弱、可逆且可能受固定化影响的相互作用。
 
 在构建体设计上，考虑到较大的LgBiT可能干扰HBc组装，本研究将较小的SmBiT融合至HBVCp182，而将LgBiT融合至preS 87--114片段一侧。实验组为HBVCp182-SmBiT与LgBiT-preS 87--114组合；阴性对照为HBVCp182-SmBiT与不含preS的LgBiT融合蛋白组合；阳性对照利用GST标签二聚化特性，将GST-SmBiT与GST-LgBiT相关蛋白组合，用于确认NanoBiT报告系统本身具有可检测上限。
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.72\textwidth]{figures/methods/nanobit.png}
+  \caption{NanoBiT发光互补检测构型示意。D，该体系使用非感染性重组融合蛋白，将SmBiT连接于HBVCp182侧，将LgBiT连接于preS 87--114侧；当HBc--preS相互作用使二者空间接近时，SmBiT与LgBiT互补形成NanoLuc活性，并在加入底物后产生发光信号。}
+  \label{fig:method-nanobit}
+\end{figure}
 
 \subsection{NanoBiT蛋白表达预实验与组分制备}
 
