@@ -1,12 +1,14 @@
 \chapter{实验结果与分析}
 
-\section{HBc--preS体外互作检测体系的建立思路}
+\section{ELISA检测体系的建立与评价}
+
+\subsection{HBc--preS体外互作检测体系的建立思路}
 
 本研究的核心目标是建立能够定量反映HBV核心蛋白（HBc）与HBsAg preS区域相互作用的体外检测体系，并为后续比较preS突变体及小分子抑制剂的影响奠定基础。根据前期结构研究，preS 87--114片段是与HBV核衣壳结合的关键区域。因此，本研究首先围绕HBc与preS片段的互作检测进行了方法学探索。
 
 考虑到HBc--preS相互作用可能较弱，且容易受到固定化方式、蛋白取向和洗涤步骤影响，本研究前期比较了多种ELISA构型。三类ELISA体系分别从不同角度优化互作检测：其一，直接包被HBc颗粒，再检测结合到HBc上的preS；其二，通过StrepXT定向捕获带Strep标签的preS，再加入HBc并检测结合的核心蛋白；其三，通过抗HBc Fab捕获HBc颗粒，再检测preS结合。通过比较这些体系的信号窗口、背景水平和重复性，可以判断传统固相ELISA是否适合作为后续突变体和小分子筛选平台。
 
-\section{HBVCp149的制备为ELISA检测提供了核心蛋白样品}
+\subsection{HBVCp149的制备为ELISA检测提供了核心蛋白样品}
 
 为建立HBc--preS互作检测体系，首先需要获得可用于包被或捕获实验的HBV核心蛋白样品。本研究使用截短形式HBVCp149作为核心蛋白颗粒材料。经盐析分级和Q柱层析后，HBVCp149在主要洗脱组分中呈现清晰的目标条带，说明核心蛋白得到有效富集。层析曲线中主要峰较为明显，同时伴随一个较小的早期肩峰，提示样品中可能存在少量不同装配状态或杂质组分；但用于后续实验的合并组分在SDS-PAGE中整体较为干净，能够满足ELISA包被和定量滴定的需要。
 
@@ -19,7 +21,7 @@
   \label{fig:hbvcp149-purification}
 \end{figure}
 
-\section{HBc直接包被ELISA显示较强非特异背景}
+\subsection{HBc直接包被ELISA显示较强非特异背景}
 
 在第一种ELISA构型中，HBVCp149被直接包被于酶标板表面，随后加入带标签的preS蛋白，并通过抗标签抗体检测结合到板上的preS信号。该设计的优点是检测路径较短，理论上能够直接反映preS与固定化HBc之间的结合；但其潜在问题是核心蛋白直接吸附到塑料表面后，颗粒构象或preS结合面可能受到影响，同时preS和检测抗体也可能产生非特异吸附。
 
@@ -34,7 +36,7 @@
 
 因此，HBc直接包被ELISA虽然步骤简单，但不能提供足够清晰的HBc依赖性信号窗口。该结果提示，后续体系需要减少preS直接接触塑料表面的机会，并尽量通过定向捕获方式改善preS呈递。
 
-\section{StrepXT捕获preS改善了preS呈递但未形成足够稳定的检测窗口}
+\subsection{StrepXT捕获preS改善了preS呈递但未形成足够稳定的检测窗口}
 
 为降低preS直接吸附造成的背景，本研究进一步构建了StrepXT捕获preS的ELISA构型。在该体系中，酶标板首先包被StrepXT，随后通过Strep标签定向捕获preS，再加入HBVCp149，最后通过抗core抗体检测结合到preS上的核心蛋白。与直接包被HBc的体系相比，该构型的主要优势在于preS可以通过标签被定向固定，从而提高其可及性并降低随机吸附带来的背景。
 
@@ -96,7 +98,7 @@
 
 因此，StrepXT捕获preS体系较直接包被体系有所改进，但仍不足以作为后续系统比较preS突变体或小分子抑制效果的主要平台。该结果提示，在preS呈递已得到改善后，限制体系表现的主要因素可能转移为核心蛋白检测灵敏度、固相体系中的结合稳定性以及洗涤过程导致的弱相互作用解离。
 
-\section{抗core Fab捕获HBc未能进一步扩大preS依赖性信号}
+\subsection{抗core Fab捕获HBc未能进一步扩大preS依赖性信号}
 
 第三种ELISA构型尝试从核心蛋白呈递方式入手进行优化。该体系首先利用抗core Fab捕获HBVCp149，再加入preS，并通过抗GST抗体检测preS信号。与HBc直接吸附于塑料表面相比，抗体介导捕获理论上更有利于保留HBc颗粒构象，并减少核心蛋白表面互作位点被随机吸附遮挡的可能性。
 
@@ -111,13 +113,15 @@
 
 这一结果说明，即便通过抗core Fab捕获方式改善HBc固定化，ELISA体系仍难以获得干净且稳定的preS依赖性读数。可能原因包括preS或抗GST抗体仍存在非特异吸附，HBc被捕获后的空间取向不一定有利于preS结合，以及HBc--preS相互作用本身较弱、容易在洗涤过程中解离。
 
-\section{ELISA体系不适合作为本研究的主要下游定量平台}
+\subsection{ELISA体系不适合作为本研究的主要下游定量平台}
 
 综合三种ELISA构型可以看出，它们分别受限于不同步骤，但共同指向同一结论：常规固相ELISA并不适合作为HBc--preS弱相互作用的主要下游定量平台。HBc直接包被体系主要受preS和抗体非特异吸附影响；StrepXT捕获preS体系改善了preS呈递，但核心蛋白检测窗口和重复性仍不足；抗core Fab捕获HBc体系改善了核心蛋白固定方式，却仍未能显著降低preS检测背景。
 
 这些结果提示，HBc--preS相互作用可能具有亲和力较弱、构象依赖性强和多价效应敏感等特点。ELISA依赖蛋白固定化、多步孵育和反复洗涤，容易破坏弱相互作用平衡，也可能因固相表面吸附而放大背景信号。尤其对于后续需要比较不同preS突变体和不同小分子抑制条件的实验，检测平台不仅需要能够区分实验组与阴性对照，还需要具有足够稳定的动态范围和统计学鲁棒性。从目前结果看，ELISA最多可作为辅助验证手段，而不适合作为主要筛选和定量比较平台。
 
-\section{NanoBiT体系初步建立并显示更适合检测HBc--preS相互作用}
+\section{NanoBiT检测体系的建立、优化与应用}
+
+\subsection{NanoBiT体系初步建立并显示更适合检测HBc--preS相互作用}
 
 基于ELISA体系的局限，本研究进一步转向NanoBiT发光互补体系。该体系不依赖反复洗涤，而是在接近溶液状态的条件下检测两个融合蛋白之间的空间接近，因此更适合检测弱而可逆的蛋白相互作用。考虑到较大的LgBiT可能影响HBc组装，本研究将较小的SmBiT融合至HBVCp182，而将LgBiT融合至含preS 87--114片段的GST融合蛋白。同时设置不含preS的LgBiT融合蛋白作为阴性对照，并利用GST标签的二聚化特性设置阳性对照，从而在同一体系内比较特异互作、非特异互补和检测上限。
 
@@ -181,7 +185,7 @@
 
 上述结果表明，在合适蛋白浓度条件下，NanoBiT体系能够提供比ELISA更稳定的实验组--阴性对照分离度和更好的统计学窗口。尤其当LgBiT-preS浓度达到40 nM及以上时，该体系已具备进行后续定量比较的基础。结合ELISA结果，可以认为NanoBiT更适合作为本研究后续分析preS关键突变体和小分子抑制作用的主要检测平台。
 
-\section{HBVCp182-SmBiT的重新纯化与活性确认}
+\subsection{HBVCp182-SmBiT的重新纯化与活性确认}
 
 前期NanoBiT实验表明，HBVCp182-SmBiT与含preS 87--114片段的LgBiT融合蛋白能够产生相互作用依赖的发光信号。然而，初始批次HBVCp182-SmBiT纯度仍然有限，可能影响后续抑制剂实验和突变体比较的重复性。因此，在后续实验中首先对HBVCp182-SmBiT进行了重新纯化与质量确认。
 
@@ -212,7 +216,7 @@
   \label{fig:hbvcp182-smbit-q-fraction-activity}
 \end{figure}
 
-\section{新纯化HBVCp182-SmBiT重复NanoBiT滴定实验}
+\subsection{新纯化HBVCp182-SmBiT重复NanoBiT滴定实验}
 
 使用合并后的新纯化HBVCp182-SmBiT进一步重复HBc与preS 87--114相互作用的NanoBiT浓度梯度实验。结果显示，随着GST-LgBiT-preS 87--114融合蛋白浓度升高，实验组发光信号持续增加；阴性对照虽然也随蛋白浓度升高而升高，但始终明显低于实验组。扣除阴性对照后的特异性信号呈现趋于饱和的曲线形态，说明该体系主要报告有限的HBc--preS相互作用，而不是无上限的非特异性NanoLuc片段互补。
 
@@ -229,7 +233,7 @@
   \label{fig:repurified-hbvcp182-nanobit-titration}
 \end{figure}
 
-\section{含foldon构建体条件下的小分子抑制实验}
+\subsection{含foldon构建体条件下的小分子抑制实验}
 
 在上述滴定结果基础上，首先使用含foldon的LgBiT-preS体系检测候选小分子对HBc--preS相互作用的影响。初筛中比较了Triton X-100、NP-40和香叶醇对NanoBiT发光信号的影响。直接加入小分子时，三种小分子均未产生充分清晰的抑制窗口。Triton X-100和NP-40的实验组信号在高浓度区间有一定下降，但阴性对照也发生轻度变化；香叶醇处理下的特异性信号波动更明显，整体趋势不够稳定。
 
@@ -253,7 +257,7 @@
   \label{fig:foldon-inhibitor-preincubation}
 \end{figure}
 
-\section{不含foldon的LgBiT构建体制备与NanoBiT滴定}
+\subsection{不含foldon的LgBiT构建体制备与NanoBiT滴定}
 
 为降低foldon介导的多聚化效应，进一步制备了不含foldon的GST-LgBiT-preS 87--114-His和GST-LgBiT-His构建体。GST亲和纯化结果显示，GST-LgBiT-preS 87--114-His可在GST柱洗脱组分中观察到较清晰的目标条带，说明该构建体能够被GST柱有效捕获并洗脱。相比之下，GST-LgBiT-His在GST柱洗脱组分中回收较少，而流穿液中仍可见目标大小附近条带，提示该蛋白在当前条件下不易通过GST柱充分回收。
 
@@ -284,7 +288,7 @@
   \label{fig:foldon-free-nanobit-titration}
 \end{figure}
 
-\section{不含foldon体系下的小分子抑制结果与GST标签影响}
+\subsection{不含foldon体系下的小分子抑制结果与GST标签影响}
 
 在不含foldon体系中重新检测Triton X-100、NP-40和香叶醇对HBc--preS结合的影响。结果显示，三种小分子在高浓度区间均使实验组发光信号下降，其中Triton X-100和香叶醇的高浓度抑制趋势较为明显，NP-40的抑制曲线相对平缓且波动较大。扣除阴性对照后，Triton X-100和香叶醇的特异性结合百分比下降更清楚，说明不含foldon体系较含foldon体系更容易显示小分子作用。
 
@@ -306,7 +310,7 @@
   \label{fig:ppase-gst-cleavage}
 \end{figure}
 
-\section{去除GST标签后preS突变体与HBc结合能力比较}
+\subsection{去除GST标签后preS突变体与HBc结合能力比较}
 
 最后，利用酶切后的LgBiT-preS蛋白比较wild-type preS 87--114及R102A、H105A和W111A突变体与HBVCp182-SmBiT的结合能力。结果显示，wild-type preS 87--114在整个LgBiT浓度范围内均产生最高发光信号，且随浓度升高持续增加。相比之下，三个突变体的信号均显著降低，并接近或仅略高于LgBiT阴性对照。
 
@@ -323,6 +327,14 @@
 
 \section{本章结果小结}
 
+\subsection{ELISA体系的主要结论}
+
 本章首先建立并比较了HBc--preS体外互作检测体系。三种ELISA构型分别从HBc直接包被、StrepXT捕获preS和抗core Fab捕获HBc三个角度优化检测流程，但均受到非特异背景高、信号窗口窄或重复性不足的限制，难以作为后续突变体比较和小分子抑制评价的主要平台。相比之下，NanoBiT体系能够在较少洗涤干扰的条件下检测HBVCp182与preS 87--114之间的相互作用，并在合适浓度下获得较好的实验组--阴性对照分离。
 
-后续实验进一步优化了NanoBiT平台。重新纯化HBVCp182-SmBiT提高了体系稳定性；含foldon体系可检测HBc--preS相互作用并初步观察小分子抑制趋势，但foldon和GST带来的多价效应限制了定量解释；不含foldon并进一步去除GST标签的体系更适合分析单价preS片段与HBc的相互作用。基于该优化体系，preS R102A、H105A和W111A突变均显著降低HBc--preS互作信号，支持这些残基在结构界面中的关键作用。整体来看，本研究已建立可用于机制验证和候选小分子初步评价的非感染性体外NanoBiT平台，为后续围绕HBc--preS界面的抗病毒策略研究提供了实验基础。
+\subsection{NanoBiT平台的优化结论}
+
+后续实验进一步优化了NanoBiT平台。重新纯化HBVCp182-SmBiT提高了体系稳定性；含foldon体系可检测HBc--preS相互作用并初步观察小分子抑制趋势，但foldon和GST带来的多价效应限制了定量解释；不含foldon并进一步去除GST标签的体系更适合分析单价preS片段与HBc的相互作用。
+
+\subsection{preS关键残基验证与平台意义}
+
+基于该优化体系，preS R102A、H105A和W111A突变均显著降低HBc--preS互作信号，支持这些残基在结构界面中的关键作用。整体来看，本研究已建立可用于机制验证和候选小分子初步评价的非感染性体外NanoBiT平台，为后续围绕HBc--preS界面的抗病毒策略研究提供了实验基础。
