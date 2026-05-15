@@ -125,43 +125,41 @@ SDS-PAGE结果显示，IgG D4在还原条件下具有清晰的重链和轻链条
 
 \section{NanoBiT检测体系的建立、优化与应用}
 
-\subsection{NanoBiT体系初步建立并显示更适合检测HBc--preS相互作用}
+\subsection{NanoBiT相关融合蛋白的构建与制备}
 
 基于ELISA体系的局限，本研究进一步转向NanoBiT发光互补体系。该体系不依赖反复洗涤，而是在接近溶液状态的条件下检测两个融合蛋白之间的空间接近，因此更适合检测弱而可逆的蛋白相互作用。考虑到较大的LgBiT可能影响HBc组装，本研究将较小的SmBiT融合至HBVCp182，而将LgBiT融合至含preS 87--114片段的GST融合蛋白。同时设置不含preS的LgBiT融合蛋白作为阴性对照，并利用GST标签的二聚化特性设置阳性对照，从而在同一体系内比较特异互作、非特异互补和检测上限。
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=1.0\textwidth]{docs/figures/result/result_08_constructs_ljq_1234.png}
+  \caption{NanoBiT相关融合蛋白的构建}
+  \label{fig:nanobit-constructs-1234}
+\end{figure}
 
 首先对NanoBiT相关构建体进行了小规模表达检测。结果显示，在测试条件下，四种融合蛋白均可检测到表达，其中一组诱导条件下目标蛋白表达较为明显，因此被选为后续蛋白制备的参考条件。随后对HBVCp182-SmBiT进行盐析和SP柱纯化，目标条带能够在洗脱组分中检测到，但纯度仍不理想，说明该蛋白制备流程仍需进一步优化。相比之下，GST标记的LgBiT融合蛋白以及GST-SmBiT均能够成功表达并通过GST亲和纯化获得较明显的目标条带，表明NanoBiT实验所需的preS融合蛋白、阴性对照和阳性对照在技术上均可获得。
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.48\textwidth]{figures/result/result_22.png}
-  \includegraphics[width=0.48\textwidth]{figures/result/result_23.png}
+  \includegraphics[width=0.9\textwidth]{docs/figures/result/result_09_expression_test_ljq_1234.png}
   \caption{NanoBiT相关构建体的小规模表达检测。四种融合蛋白在测试条件下均可检测到表达，为后续纯化和发光互补实验提供了基础。}
   \label{fig:nanobit-expression-test}
 \end{figure}
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.25\textwidth]{figures/result/result_24.png}
-  \hfill
-  \includegraphics[width=0.43\textwidth]{figures/result/result_25.png}
-  \hfill
-  \includegraphics[width=0.27\textwidth]{figures/result/result_26.png}
-  \par\medskip
-  \includegraphics[width=0.34\textwidth]{figures/result/result_27.png}
-  \hfill
-  \includegraphics[width=0.60\textwidth]{figures/result/result_28.png}
-  \caption{HBVCp182-SmBiT的表达与纯化结果。目标蛋白可在洗脱组分中检测到，但纯度仍需进一步优化。}
+  \includegraphics[width=0.8\textwidth]{docs/figures/result/result_10_ljq_1.png}
+  \caption{HBVCp182-SmBiT的表达与纯化结果。目标蛋白可在洗脱组分中检测到.}
   \label{fig:hbvcp182-smbit-purification}
 \end{figure}
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.50\textwidth]{figures/result/result_29.png}
-  \hfill
-  \includegraphics[width=0.36\textwidth]{figures/result/result_30.png}
+  \includegraphics[width=0.9\textwidth]{docs/figures/result/result_11_ljq_234.png}
   \caption{GST标记LgBiT融合蛋白及GST-SmBiT的表达纯化结果。相关对照蛋白和preS融合蛋白均可获得，为NanoBiT互作检测提供了实验材料。}
   \label{fig:gst-lgbit-purification}
 \end{figure}
+
+\subsection{NanoBiT体系的初步发光检测}
 
 在初步发光检测中，将LgBiT融合蛋白与SmBiT融合蛋白按1:1浓度比例混合，结果显示HBVCp182-SmBiT与含preS 87--114的LgBiT融合蛋白组合产生的发光信号持续高于阴性对照。与此同时，GST介导的阳性对照产生最高信号，说明NanoBiT报告系统本身具有可检测的上限窗口；仅含单一融合蛋白的孔接近基线，提示LgBiT和SmBiT自发互补造成的背景较低。该结果说明，NanoBiT体系能够将HBc与preS片段之间的接近事件转化为可检测的发光信号。
 
