@@ -125,7 +125,7 @@ SDS-PAGE结果显示，IgG D4在还原条件下具有清晰的重链和轻链条
 
 \section{NanoBiT检测体系的建立、优化与应用}
 
-\subsection{NanoBiT相关融合蛋白的构建与制备}
+\subsection{NanoBiT相关融合蛋白的构建与试表达}
 
 基于ELISA体系的局限，本研究进一步转向NanoBiT发光互补体系。该体系不依赖反复洗涤，而是在接近溶液状态的条件下检测两个融合蛋白之间的空间接近，因此更适合检测弱而可逆的蛋白相互作用。考虑到较大的LgBiT可能影响HBc组装，本研究将较小的SmBiT融合至HBVCp182，而将LgBiT融合至含preS 87--114片段的GST融合蛋白。同时设置不含preS的LgBiT融合蛋白作为阴性对照，并利用GST标签的二聚化特性设置阳性对照，从而在同一体系内比较特异互作、非特异互补和检测上限。
 
@@ -145,17 +145,56 @@ SDS-PAGE结果显示，IgG D4在还原条件下具有清晰的重链和轻链条
   \label{fig:nanobit-expression-test}
 \end{figure}
 
+\subsection{HBVCp182-SmBit的表达纯化与活性检测}
+
+将HBVCp182-SmBiT的重组质粒转入NiCo21大肠杆菌并在37°C诱导表达4小时后，经分步盐析与Q HP阴离子交换层析，在层析图谱上显示多个紫外吸收峰，其中约15.01 mL、18.68 mL和24.80 mL附近的峰与后续SDS-PAGE和Western blot检测中的目标蛋白分布相对应。
+
+SDS-PAGE结果显示，HBVCp182-SmBiT目标条带位于约22.33 kDa附近，并在Q柱洗脱组分中明显富集。进一步使用anti-HBcAg抗体进行Western blot检测时，相同组分出现明确的HBc相关条带，确认该条带对应HBVCp182-SmBiT。基于电泳、免疫印迹和后续活性检测结果，将Q柱9--13管和15--22管分别合并，用于进一步比较其NanoBiT检测活性。
+
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.8\textwidth]{docs/figures/result/result_10_ljq_1.png}
+  \includegraphics[width=1.0\textwidth]{docs/figures/result/result_10_ljq_1.png}
   \caption{HBVCp182-SmBiT的表达与纯化结果。目标蛋白可在洗脱组分中检测到.}
   \label{fig:hbvcp182-smbit-purification}
 \end{figure}
 
+为判断不同Q柱合并组分是否具有相近功能活性，分别使用Q 9--13和Q 15--22两组合并样品进行NanoBiT检测。两组合并组分均产生明显高于阴性对照和HBc-only背景的发光信号，说明重新纯化后的HBVCp182-SmBiT保留了检测preS结合的功能。Q 9--13组分实验组平均信号为1644.00 RLU，阴性对照为289.67 RLU，特异性窗口约为1354.33 RLU；Q 15--22组分实验组平均信号为1875.00 RLU，阴性对照为245.67 RLU，特异性窗口约为1629.33 RLU。Q 15--22组分信号略高，但两组合并组分均可支持后续实验。基于蛋白利用率和批次一致性考虑，后续将两组合并作为后续NanoBiT实验中的核心蛋白来源。
+
+\begin{table}[htbp]
+  \centering
+  \caption{不同Q柱合并组分NanoBiT活性检测}
+  \label{tab:NanoBiT-test-data}
+  \begin{tabular}{cccc}
+    \toprule
+    & \makecell{80 nM GST-LgBit-preS\\ 实验组} & \makecell{80 nM GST-LgBit\\ 阴性对照} & 
+    \makecell{only HBVCp182-SmBit\\ 空白对照} \\
+    \midrule
+    \multirow{3}{*}{Q 9-13}  & 1679 & 297 & 51 \\
+                             & 1782 & 305 & 31 \\
+                             & 1471 & 267 & 33 \\
+    \midrule
+    \multirow{3}{*}{Q 15-22} & 2102 & 211 & 37 \\
+                             & 1804 & 283 & 16 \\
+                             & 1719 & 243 & 25 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.9\textwidth]{docs/figures/result/result_11_ljq_234.png}
-  \caption{GST标记LgBiT融合蛋白及GST-SmBiT的表达纯化结果。相关对照蛋白和preS融合蛋白均可获得，为NanoBiT互作检测提供了实验材料。}
+  \includegraphics[width=0.7\textwidth]{docs/figures/result/result_11_nanobit_test.png}
+  \caption{Q 9--13和Q 15--22两组合并HBVCp182-SmBiT样品的NanoBiT活性比较。两组均显示出显著高于阴性对照和HBc-only背景的发光信号。}
+  \label{fig:hbvcp182-smbit-q-fraction-activity}
+\end{figure}
+
+\subsection{三种GST标签融合蛋白的表达与纯化}
+
+两种GST标签的LgBiT融合蛋白及GST-SmBiT均成功表达并纯化，在GST洗脱组分中可观察到明确的目的条带。该结果表明，实验组以及阳性、阴性对照所需的NanoBiT体系各组成元件均已成功获得，从而为在同一检测体系中比较特异性与非特异性互补信号提供了实验基础。
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.95\textwidth]{docs/figures/result/result_12_ljq_234.png}
+  \caption{三种GST标签融合蛋白的表达纯化结果。A，GST-LgBiT-preS（002）及GST-LgBiT（003）经GST层析柱后各组分的SDS-PAGE分析。B，GST-SmBiT（004）经GST层析柱后各组分的SDS-PAGE分析。相关对照蛋白和preS融合蛋白均可获得，为NanoBiT互作检测提供了实验材料。}
   \label{fig:gst-lgbit-purification}
 \end{figure}
 
@@ -186,37 +225,6 @@ SDS-PAGE结果显示，IgG D4在还原条件下具有清晰的重链和轻链条
 \end{figure}
 
 上述结果表明，在合适蛋白浓度条件下，NanoBiT体系能够提供比ELISA更稳定的实验组--阴性对照分离度和更好的统计学窗口。尤其当LgBiT-preS浓度达到40 nM及以上时，该体系已具备进行后续定量比较的基础。结合ELISA结果，可以认为NanoBiT更适合作为本研究后续分析preS关键突变体和小分子抑制作用的主要检测平台。
-
-\subsection{HBVCp182-SmBiT的重新纯化与活性确认}
-
-前期NanoBiT实验表明，HBVCp182-SmBiT与含preS 87--114片段的LgBiT融合蛋白能够产生相互作用依赖的发光信号。然而，初始批次HBVCp182-SmBiT纯度仍然有限，可能影响后续抑制剂实验和突变体比较的重复性。因此，在后续实验中首先对HBVCp182-SmBiT进行了重新纯化与质量确认。
-
-重新纯化后的Q HP阴离子交换层析图谱显示多个紫外吸收峰，其中约15.01 mL、18.68 mL和24.80 mL附近的峰与后续SDS-PAGE和Western blot检测中的目标蛋白分布相对应。SDS-PAGE结果显示，HBVCp182-SmBiT目标条带位于约22.33 kDa附近，并在Q柱洗脱组分中明显富集。进一步使用anti-HBcAg抗体进行Western blot检测时，相同组分出现明确的HBc相关条带，确认该条带对应HBVCp182-SmBiT。基于电泳、免疫印迹和后续活性检测结果，将Q柱9--13管和15--22管分别合并，用于进一步比较其NanoBiT活性。
-
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=0.82\textwidth]{figures/result/result_36.png}
-  \caption{重新纯化HBVCp182-SmBiT的Q HP层析图谱。Q 9--13和Q 15--22附近组分被选取用于后续SDS-PAGE、Western blot和NanoBiT活性比较。}
-  \label{fig:hbvcp182-smbit-repurification-q}
-\end{figure}
-
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=0.46\textwidth]{figures/result/result_37.png}
-  \hfill
-  \includegraphics[width=0.46\textwidth]{figures/result/result_38.png}
-  \caption{重新纯化HBVCp182-SmBiT的SDS-PAGE和Western blot确认。目标条带在Q柱洗脱组分中富集，并可被anti-HBcAg抗体识别。}
-  \label{fig:hbvcp182-smbit-repurification-gel-wb}
-\end{figure}
-
-为判断不同Q柱合并组分是否具有相近功能活性，分别使用Q 9--13和Q 15--22两组合并样品进行NanoBiT检测。两组合并组分均产生明显高于阴性对照和HBc-only背景的发光信号，说明重新纯化后的HBVCp182-SmBiT保留了检测preS结合的功能。Q 9--13组分实验组平均信号为1644.00 RLU，阴性对照为289.67 RLU，特异性窗口约为1354.33 RLU；Q 15--22组分实验组平均信号为1875.00 RLU，阴性对照为245.67 RLU，特异性窗口约为1629.33 RLU。Q 15--22组分信号略高，但两组合并组分均可支持后续实验。基于蛋白利用率和批次一致性考虑，后续将两组合并作为后续NanoBiT实验中的核心蛋白来源。
-
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=0.86\textwidth]{figures/result/result_39.png}
-  \caption{Q 9--13和Q 15--22两组合并HBVCp182-SmBiT样品的NanoBiT活性比较。两组均显示高于阴性对照和HBc-only背景的发光信号。}
-  \label{fig:hbvcp182-smbit-q-fraction-activity}
-\end{figure}
 
 \subsection{新纯化HBVCp182-SmBiT重复NanoBiT滴定实验}
 
