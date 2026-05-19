@@ -93,6 +93,21 @@ preS区域还具有重要的临床和病理学意义。慢性HBV感染患者中�
 
 从生物安全和实验可控性角度看，利用非感染性重组蛋白、合成片段或报告系统研究HBc--preS结合，是解析该界面和评估候选抑制物的合适路径。此类体系不涉及感染性病毒扩增或病毒传播能力增强，而是将问题聚焦于纯化组分之间的相互作用及其抑制规律。对于毕业论文研究而言，建立稳健的体外定量平台，比较preS 87--114相关构建体和小分子竞争效应，既能够服务于基础机制研究，也能够为后续更严格的药物筛选和细胞水平验证提供前期依据。
 
+\section{NanoBiT技术原理}
+
+NanoBiT是一种基于NanoLuc荧光素酶拆分互补的蛋白相互作用检测技术。NanoLuc是一种小分子、单体化且发光强度较高的工程化荧光素酶，可催化furimazine氧化生成furimamide、二氧化碳和光信号。Dixon等利用NanoLuc体积小和发光强的特点，将其工程化拆分为两个互补片段：较大的LgBiT片段约18 kDa，较小的SmBiT片段为11个氨基酸、约1.3 kDa\cite{dixon2016nanoluc}。单独存在时，LgBiT与SmBiT之间的自发亲和力较弱；当二者分别融合到两个待测蛋白上，并因目标蛋白相互作用而靠近时，LgBiT和SmBiT可发生结构互补，重新形成具有催化活性的NanoLuc复合物，并在加入底物后产生可定量检测的发光信号。
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.95\textwidth]{figures/introduction/nanobit_principle.png}
+  \caption{NanoLuc与NanoBiT蛋白互补技术的基本原理。A，NanoLuc催化furimazine氧化并产生发光信号。B，NanoBiT由较小的SmBiT和较大的LgBiT组成，二者互补后恢复NanoLuc活性。C，当SmBiT和LgBiT分别融合到两个待测蛋白上时，目标蛋白相互作用可促进互补复合物形成并产生发光信号。图片根据Dixon等的研究和NanoBiT技术资料整理\cite{dixon2016nanoluc}。}
+  \label{fig:nanobit-principle}
+\end{figure}
+
+与传统pull-down、免疫共沉淀或ELISA相比，NanoBiT读数依赖于两个融合蛋白在溶液或细胞环境中的空间接近，而不必将相互作用完全固定在固相表面。因此，该技术特别适合观察可逆、动态或相对较弱的蛋白相互作用。Dixon等测得NanoBiT片段自身的本征亲和力约为190 \textmu M，且互补过程具有可逆性，这一设计有助于降低报告片段自身结合对待测蛋白相互作用的驱动作用\cite{dixon2016nanoluc}。同时，NanoLuc体系发光强、背景低、线性范围宽，适合在多孔板中进行定量检测和候选调节因子筛选。
+
+对于HBc--preS互作研究而言，NanoBiT的优势在于可将HBVCp182与preS 87--114之间的接近事件转化为发光信号，从而减少洗涤、包被和固定化步骤对弱相互作用的干扰。将较小的SmBiT融合于HBc侧、将LgBiT融合于preS侧，可以在尽量降低标签体积影响的同时检测二者是否发生空间接近。不过，NanoBiT信号本质上反映的是融合蛋白之间的近距离互补，仍需配合阴性对照、不同标签方向、蛋白质量控制以及小分子对发光体系本身影响的排查，才能将发光变化谨慎解释为HBc--preS相互作用或其抑制效应。
+
 \section{本研究的目的与意义}
 
 综上所述，HBc--preS相互作用是HBV感染性颗粒形成中的关键步骤，也是连接结构生物学机制研究与新型抗病毒药物开发的重要界面。已有遗传学、生化和细胞实验表明preS区域参与核衣壳包膜化；Bruss的功能定位研究进一步支持preS 87--114是L-HBsAg介导包膜化的关键功能区，并可能参与preS与core之间的相互作用\cite{bruss1997short}。同时，Triton X-100和geraniol等小分子能够结合HBc特定疏水口袋\cite{makbul2021binding,khayenko2024induction}，为探索小分子干预HBc--preS相互作用提供了依据。该方向仍需要更多定量实验支持，特别是在不同preS构建体和不同小分子浓度条件下，对HBc--preS结合强弱进行系统比较。
