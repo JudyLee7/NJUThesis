@@ -281,7 +281,7 @@ SDS-PAGE结果显示，HBVCp182-SmBiT目标条带位于约22.33 kDa附近，并�
 
 为增强小分子与HBVCp182-SmBiT的接触，后续实验改为先将候选小分子与HBVCp182-SmBiT预先孵育，再加入LgBiT-preS或LgBiT阴性对照进行检测，并提高抑制剂浓度范围。在该条件下，Triton X-100、NP-40和香叶醇对HBc--preS发光信号的抑制趋势更加明显，尤其在高浓度区间，实验组信号出现更大幅度下降，扣除阴性对照后的相对结合百分比也呈下降趋势。
 
-根据拟合结果，在该实验条件下，Triton X-100的IC50为618.2 uM，NP-40的IC50为180.5 uM，香叶醇的IC50为1780 uM。
+根据拟合结果，在该含foldon体系条件下，Triton X-100的表观IC$_{50}$为618.2 $\mu$M，NP-40的表观IC$_{50}$为180.5 $\mu$M，香叶醇的表观IC$_{50}$为1780 $\mu$M。这些数值说明三种候选分子均可在该体系中引起不同程度的信号下降，但仍应被理解为当前检测构型下的表观抑制结果，而非单价HBc--preS结合状态下的精确IC$_{50}$。
 
 \begin{figure}[htbp]
   \centering
@@ -290,7 +290,7 @@ SDS-PAGE结果显示，HBVCp182-SmBiT目标条带位于约22.33 kDa附近，并�
   \label{fig:foldon-inhibitor-preincubation}
 \end{figure}
 
-尽管如此，含foldon体系仍不适合直接计算准确的表观亲和力或IC$_{50}$。当前使用的GST-LgBiT-preS 87--114-foldon构建体含有foldon结构域，可能诱导三聚化并增强多价结合；同时GST标签本身也具有二聚化倾向。这些因素可能提高体系的表观亲和力和发光信号，使小分子抑制被部分掩盖，也使剂量--反应曲线不能直接反映单价HBc--preS相互作用。因此，后续实验进一步转向不含foldon的LgBiT构建体，并尝试降低GST标签二聚化带来的影响。
+尽管如此，含foldon体系仍不适合直接代表单体preS片段与HBc之间的抑制关系。当前使用的GST-LgBiT-preS 87--114-foldon构建体含有foldon结构域，可能诱导三聚化并增强多价结合；同时GST标签本身也具有二聚化倾向。这些因素可能提高体系的表观亲和力和发光信号，使小分子抑制被部分掩盖，也使剂量--反应曲线不能直接反映单价HBc--preS相互作用。因此，本节保留含foldon蛋白获得的小分子抑制结果作为候选分子作用趋势的初步证据；后续研究需要进一步降低foldon和GST标签带来的多价效应、优化背景控制和重复性，从而获得更加符合单体结合状态的IC$_{50}$。
 
 \subsection{不含foldon的LgBiT融合蛋白的构建与制备}
 
@@ -318,21 +318,27 @@ GST亲和纯化结果显示，GST-LgBiT-preS 87--114-His可在GST柱洗脱组分
 
 使用新纯化的不含foldon构建体重复HBc--preS NanoBiT滴定实验。与含foldon体系相比，不含foldon的LgBiT-preS不再具有三聚化带来的多价优势，因此需要更高浓度才能产生足够的特异性发光信号。实验组信号随着LgBiT-preS浓度增加而持续上升，阴性对照维持在较低水平但仍具有一定浓度依赖背景。扣除阴性对照后，特异性信号逐渐升高并呈现弯曲趋势，说明该体系仍可检测HBc--preS相互作用，但表观结合强度低于含foldon体系。
 
-根据不同浓度范围的滴定结果，后续小分子抑制实验选择1000 nM LgBiT作为工作浓度。该浓度能够提供清楚的实验组与阴性对照分离，同时保留可观察的抑制空间；若浓度过低，信号窗口不足，而浓度过高则可能增加背景并削弱抑制剂引起的相对变化。
+根据不同浓度范围的滴定结果，不含foldon体系仍能够提供可观察的HBc--preS结合信号，但相较于含foldon体系，其信号窗口更依赖较高浓度的LgBiT融合蛋白。该结果提示，foldon去除后多价效应减弱，体系更接近低价态互作检测条件；同时较高浓度下背景信号仍可能升高，因此该体系更适合作为后续突变体结合能力比较和标签影响评估的补充平台，而不在本章中继续用于小分子抑制结果解读。
 
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=0.95\textwidth]{docs/figures/result/result_19_foldon-free-nanobit-titration.png}
-  \caption{不含foldon体系下的HBc--preS NanoBiT滴定结果。实验组信号随LgBiT-preS浓度升高而增加，提示该体系可用于后续小分子抑制检测。}
+  \caption{不含foldon体系下的HBc--preS NanoBiT滴定结果。实验组信号随LgBiT-preS浓度升高而增加，提示该体系可用于后续突变体结合能力比较和标签影响评估。}
   \label{fig:foldon-free-nanobit-titration}
 \end{figure}
 
 \subsection{不同preS突变体与HBc结合能力比较}
 
+在不含foldon但仍保留GST标签的LgBiT-preS体系中，进一步比较wild-type preS 87--114及R102A、H105A和W111A突变体与HBVCp182-SmBiT的结合能力。由于该组蛋白仍含有GST标签，实验读数可能受到GST二聚化和由此产生的局部浓度效应影响，因此该实验主要用于比较不同preS序列之间的相对结合趋势，而不用于直接推断单体状态下的精确亲和力。
+
+结果显示，wild-type preS 87--114在各浓度下均产生最高发光信号，并随LgBiT融合蛋白浓度升高呈现逐渐趋于饱和的曲线。GST-LgBiT阴性对照也随浓度升高出现一定背景信号，但整体低于含preS的实验组，说明该体系中仍可区分preS依赖性互作与非特异NanoBiT互补背景。与wild-type相比，R102A、H105A和W111A三个突变体的发光信号均降低，提示这些位点均参与preS 87--114与HBc的结合。
+
+扣除GST-LgBiT背景后，突变体之间的差异更加清楚：W111A仍保留一定残余结合信号，但明显低于wild-type；H105A和R102A下降更为显著，整体更接近背景水平。该结果支持R102、H105和W111共同构成或维持HBc--preS结合界面，其中R102和H105对结合贡献更为关键。由于该实验仍处于GST标签保留状态，后续进一步去除GST标签后再比较突变体，有助于判断上述趋势是否仍能在更接近单体preS片段的条件下保持一致。
+
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=0.8\textwidth]{docs/figures/result/result_20_preS_mutant.png}
-  \caption{不同preS突变体与HBc结合能力比较。}
+  \caption{保留GST标签条件下不同preS突变体与HBc结合能力比较。wild-type preS 87--114产生最高NanoBiT信号，R102A、H105A和W111A均降低HBc--preS互作信号，其中R102A和H105A下降更明显。}
   \label{fig:pres-mutant-nanobit}
 \end{figure}
 
@@ -362,12 +368,12 @@ GST亲和纯化结果显示，GST-LgBiT-preS 87--114-His可在GST柱洗脱组分
 
 \subsection{ELISA体系的主要结论}
 
-本章首先建立并比较了HBc--preS体外互作检测体系。三种ELISA构型分别从HBc直接包被、StrepXT捕获preS和抗core Fab捕获HBc三个角度优化检测流程，但均受到非特异背景高、信号窗口窄或重复性不足的限制，难以作为后续突变体比较和小分子抑制评价的主要平台。相比之下，NanoBiT体系能够在较少洗涤干扰的条件下检测HBVCp182与preS 87--114之间的相互作用，并在合适浓度下获得较好的实验组--阴性对照分离。
+本章首先建立并比较了HBc--preS体外互作检测体系。三种ELISA构型分别从HBc直接包被、StrepXT捕获preS和抗HBc Fab捕获HBc三个角度优化检测流程。结果显示，HBc直接包被体系受到preS或检测抗体非特异吸附影响；StrepXT捕获preS能够改善preS呈递，但核心蛋白检测窗口和Z-factor仍不足；抗HBc Fab捕获HBc虽改善了核心蛋白固定方式，但未能显著降低preS检测背景。总体来看，常规固相ELISA难以稳定报告HBc--preS弱相互作用，最多适合作为辅助验证手段，而不适合作为本研究后续突变体比较和小分子抑制评价的主要定量平台。
 
-\subsection{NanoBiT平台的优化结论}
+\subsection{NanoBiT体系的主要结论}
 
-后续实验进一步优化了NanoBiT平台。重新纯化HBVCp182-SmBiT提高了体系稳定性；含foldon体系可检测HBc--preS相互作用并初步观察小分子抑制趋势，但foldon和GST带来的多价效应限制了定量解释；不含foldon并进一步去除GST标签的体系更适合分析单价preS片段与HBc的相互作用。
+基于ELISA体系的局限，本研究进一步建立了非感染性的体外NanoBiT检测平台。HBVCp182-SmBiT与GST-LgBiT-preS 87--114能够产生明显高于GST-LgBiT阴性对照的发光信号，且在固定HBVCp182-SmBiT浓度后随LgBiT-preS浓度升高呈现可饱和趋势，说明该体系能够较稳定地报告HBc--preS空间接近事件。含foldon的LgBiT-preS体系进一步用于候选小分子初步评价，Triton X-100、NP-40和香叶醇均可在当前构型下引起不同程度的表观信号下降，但由于foldon和GST标签可能带来多价效应，这些IC$_{50}$结果应解释为初步表观抑制趋势。后续研究仍需进一步优化单体化检测条件和背景控制，以获得更加符合单体结合状态的IC$_{50}$。
 
-\subsection{preS关键残基验证与平台意义}
+\subsection{突变体比较与平台意义}
 
-基于该优化体系，preS R102A、H105A和W111A突变均显著降低HBc--preS互作信号，支持这些残基在结构界面中的关键作用。整体来看，本研究已建立可用于机制验证和候选小分子初步评价的非感染性体外NanoBiT平台，为后续围绕HBc--preS界面的抗病毒策略研究提供了实验基础。
+在机制验证方面，本章比较了wild-type preS 87--114及R102A、H105A和W111A突变体与HBc的结合能力。保留GST标签的突变体比较显示三个突变均降低NanoBiT信号，其中R102A和H105A下降更明显；进一步去除GST标签后，该趋势仍然得到支持，说明R102、H105和W111均参与HBc--preS结合界面，且R102和H105对结合贡献尤其重要。整体来看，本研究已建立可用于HBc--preS界面机制分析和候选小分子初步评价的体外NanoBiT平台，为后续围绕该界面的抗病毒策略研究提供了实验基础。
