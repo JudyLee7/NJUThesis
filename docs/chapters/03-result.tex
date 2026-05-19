@@ -204,44 +204,67 @@ SDS-PAGE结果显示，HBVCp182-SmBiT目标条带位于约22.33 kDa附近，并�
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.62\textwidth]{figures/result/result_31.png}
+  \includegraphics[width=0.75\textwidth]{docs/figures/result/result_13_nanobit_one_to_one.png}
   \caption{NanoBiT体系1:1浓度比例下的初步检测结果。HBVCp182-SmBiT与preS 87--114-LgBiT组合的发光信号高于阴性对照，阳性对照显示检测体系具有足够的信号上限。}
   \label{fig:nanobit-one-to-one}
 \end{figure}
 
-进一步固定HBVCp182-SmBiT浓度为50 nM并滴定含preS 87--114的LgBiT融合蛋白时，实验组与阴性对照之间的分离随LgBiT-preS浓度升高而逐渐增强。实验组总发光信号呈浓度依赖性上升，扣除背景后的特异信号呈现趋于饱和的趋势，符合有限互作复合物形成的特征。定量结果显示，当LgBiT-preS终浓度为40、80和160 nM时，实验组发光信号分别约为3295.33、4873.67和7194.67 RLU，而对应阴性对照分别约为915.67、1561.67和2697.67 RLU。相应Z-factor分别为0.608、0.695和0.623，均超过0.5；20 nM条件下Z-factor约为0.485，处于临界范围。
+\subsection{固定HBVCp182-SmBiT浓度后的NanoBiT滴定实验}
+
+进一步固定HBVCp182-SmBiT浓度为12.5 nM并滴定含preS 87--114的LgBiT融合蛋白时，实验组与阴性对照之间的分离随LgBiT-preS浓度升高而逐渐增强。
+
+结果显示，随着GST-LgBiT-preS 87--114融合蛋白浓度升高，实验组发光信号持续增加；阴性对照虽然也随蛋白浓度升高而升高，但始终明显低于实验组。扣除阴性对照后的特异性信号呈现趋于饱和的曲线形态，说明该体系主要报告有限的HBc--preS相互作用，而不是无上限的非特异性NanoLuc片段互补。
+
+定量结果显示，在5--320 nM LgBiT-preS范围内，实验组平均信号由939.00 RLU增加至11320.67 RLU，阴性对照由93.00 RLU增加至4691.67 RLU，特异性信号由846.00 RLU增加至6629.00 RLU。5、10、80和160 nM条件下的Z-factor均高于0.5，其中10 nM和160 nM分别达到0.859和0.770，说明这些浓度下实验组和阴性对照具有较好统计分离度。20、40和320 nM条件下Z-factor低于0.5，主要可能与实验组变异或高浓度背景升高有关。
+
+尽管40 nM条件的Z-factor为0.403，但该条件下实验组信号明显高于背景，曲线仍处于较敏感的上升区间，且蛋白消耗低于更高浓度条件，因此被选为含foldon体系下小分子初筛的工作浓度。
+
+\begin{table}[htbp]
+\centering
+\caption{不同LgBiT浓度下的NanoBiT信号实验结果}
+\begin{tabular}{cccccccccc}
+\toprule
+ & 320 nM & 160 nM & 80 nM & 40 nM & 20 nM & 10 nM & 5 nM & 0 nM & 空白 \\
+\midrule
+\multirow{3}{*}{实验组}
+ & 10626 & 9164 & 6938 & 4255 & 3017 & 1791 & 954 & 29 & 24 \\
+ & 11526 & 9305 & 7427 & 5552 & 3538 & 1788 & 964 & 44 & 32 \\
+ & 11810 & 9764 & 7179 & 4764 & 2818 & 1710 & 899 & 46 & 25 \\
+\midrule
+\multirow{3}{*}{阴性对照}
+ & 3864 & 3018 & 1825 & 981 & 558 & 217 & 93 & —— & —— \\
+ & 5050 & 3345 & 2031 & 1058 & 632 & 267 & 83 & —— & —— \\
+ & 5161 & 3169 & 2274 & 1179 & 795 & 230 & 103 & —— & —— \\
+\bottomrule
+\end{tabular}
+\end{table}
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.46\textwidth]{figures/result/result_32.png}
-  \hfill
-  \includegraphics[width=0.46\textwidth]{figures/result/result_33.png}
-  \par\medskip
-  \includegraphics[width=0.35\textwidth]{figures/result/result_34.png}
-  \hfill
-  \includegraphics[width=0.55\textwidth]{figures/result/result_35.png}
-  \caption{固定HBVCp182-SmBiT浓度后的NanoBiT滴定结果。随着preS 87--114-LgBiT浓度升高，实验组与阴性对照逐渐分离，部分条件下Z-factor超过0.5，显示该体系具备后续定量比较的可行性。}
-  \label{fig:nanobit-fixed-core}
-\end{figure}
-
-上述结果表明，在合适蛋白浓度条件下，NanoBiT体系能够提供比ELISA更稳定的实验组--阴性对照分离度和更好的统计学窗口。尤其当LgBiT-preS浓度达到40 nM及以上时，该体系已具备进行后续定量比较的基础。结合ELISA结果，可以认为NanoBiT更适合作为本研究后续分析preS关键突变体和小分子抑制作用的主要检测平台。
-
-\subsection{新纯化HBVCp182-SmBiT重复NanoBiT滴定实验}
-
-使用合并后的新纯化HBVCp182-SmBiT进一步重复HBc与preS 87--114相互作用的NanoBiT浓度梯度实验。结果显示，随着GST-LgBiT-preS 87--114融合蛋白浓度升高，实验组发光信号持续增加；阴性对照虽然也随蛋白浓度升高而升高，但始终明显低于实验组。扣除阴性对照后的特异性信号呈现趋于饱和的曲线形态，说明该体系主要报告有限的HBc--preS相互作用，而不是无上限的非特异性NanoLuc片段互补。
-
-定量结果显示，在10--640 nM LgBiT-preS范围内，实验组平均信号由939.00 RLU增加至11320.67 RLU，阴性对照由93.00 RLU增加至4691.67 RLU，特异性信号由846.00 RLU增加至6629.00 RLU。10、20、160和320 nM条件下的Z-factor均高于0.5，其中20 nM和320 nM分别达到0.859和0.770，说明这些浓度下实验组和阴性对照具有较好统计分离度。40、80和640 nM条件下Z-factor低于0.5，主要可能与实验组变异或高浓度背景升高有关。尽管80 nM条件的Z-factor为0.403，但该条件下实验组信号明显高于背景，曲线仍处于较敏感的上升区间，且蛋白消耗低于更高浓度条件，因此被选为含foldon体系下小分子初筛的工作浓度。
-
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=0.82\textwidth]{figures/result/result_40.png}
-  \par\medskip
-  \includegraphics[width=0.52\textwidth]{figures/result/result_41.png}
-  \hfill
-  \includegraphics[width=0.38\textwidth]{figures/result/result_42.png}
-  \caption{使用新纯化HBVCp182-SmBiT重复NanoBiT滴定实验。实验组信号随LgBiT-preS浓度升高而增加，扣除阴性对照后的特异性信号呈饱和趋势。}
+  \includegraphics[width=1.0\textwidth]{docs/figures/result/result_14_repurified-hbvcp182-nanobit-titration.png}
+  \caption{固定HBVCp182-SmBiT浓度为12.5 nM并滴定含preS 87--114的LgBiT融合蛋白。A，实验组信号随LgBiT-preS浓度升高而增加。B，扣除阴性对照后的特异性信号呈饱和趋势，Langmuir单一位点特异性吸附拟合后的Kd为39.86。}
   \label{fig:repurified-hbvcp182-nanobit-titration}
 \end{figure}
+
+\begin{table}[htbp]
+\centering
+\caption{不同LgBiT浓度下的Z-factor统计结果}
+\begin{tabular}{cccccc}
+\toprule
+浓度/nM & 实验组均值 & 实验组SD & 阴性对照均值 & 阴性对照SD & Z - factor \\
+\midrule
+320 & 11320.67 & 618.13 & 4691.67 & 718.93 & 0.395 \\
+160 & 9411.00  & 313.73 & 3177.33 & 163.66 & 0.770 \\
+80 & 7181.33  & 244.51 & 2043.33 & 224.75 & 0.726 \\
+40  & 4857.00  & 653.48 & 1072.67 & 99.81  & 0.403 \\
+20  & 3124.33  & 371.81 & 661.67  & 121.25 & 0.399 \\
+10  & 1763.00  & 45.92  & 238.00  & 25.94  & 0.859 \\
+5  & 939.00   & 35.00  & 93.00   & 10.00  & 0.840 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+上述结果表明，在合适蛋白浓度条件下，NanoBiT体系能够提供比ELISA更稳定的实验组--阴性对照分离度和更好的统计学窗口。尤其当LgBiT-preS浓度达到40 nM及以上时，该体系已具备进行后续定量比较的基础。结合ELISA结果，可以认为NanoBiT更适合作为本研究后续分析preS关键突变体和小分子抑制作用的主要检测平台。
 
 \subsection{含foldon构建体条件下的小分子抑制实验}
 
@@ -251,41 +274,47 @@ SDS-PAGE结果显示，HBVCp182-SmBiT目标条带位于约22.33 kDa附近，并�
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.70\textwidth]{figures/result/result_43.png}
+  \includegraphics[width=1.0\textwidth]{docs/figures/result/result_15_foldon-inhibitor-initial.png}
   \caption{含foldon构建体条件下的小分子抑制初筛。直接加入Triton X-100、NP-40和香叶醇时，HBc--preS特异性信号未形成稳定清晰的剂量依赖性抑制窗口。}
   \label{fig:foldon-inhibitor-initial}
 \end{figure}
 
 为增强小分子与HBVCp182-SmBiT的接触，后续实验改为先将候选小分子与HBVCp182-SmBiT预先孵育，再加入LgBiT-preS或LgBiT阴性对照进行检测，并提高抑制剂浓度范围。在该条件下，Triton X-100、NP-40和香叶醇对HBc--preS发光信号的抑制趋势更加明显，尤其在高浓度区间，实验组信号出现更大幅度下降，扣除阴性对照后的相对结合百分比也呈下降趋势。
 
-尽管如此，含foldon体系仍不适合直接计算准确的表观亲和力或IC$_{50}$。当前使用的GST-LgBiT-preS 87--114-foldon构建体含有foldon结构域，可能诱导三聚化并增强多价结合；同时GST标签本身也具有二聚化倾向。这些因素可能提高体系的表观亲和力和发光信号，使小分子抑制被部分掩盖，也使剂量--反应曲线不能直接反映单价HBc--preS相互作用。因此，后续实验进一步转向不含foldon的LgBiT构建体，并尝试降低GST标签二聚化带来的影响。
+根据拟合结果，在该实验条件下，Triton X-100的IC50为618.2 uM，NP-40的IC50为180.5 uM，香叶醇的IC50为1780 uM。
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.70\textwidth]{figures/result/result_44.png}
+  \includegraphics[width=1.0\textwidth]{docs/figures/result/result_16_foldon-inhibitor-preincubation.png}
   \caption{预孵育并提高小分子浓度后的含foldon体系抑制实验。高浓度区间实验组信号和相对结合百分比下降更明显，但foldon和GST相关多价效应限制了定量解释。}
   \label{fig:foldon-inhibitor-preincubation}
 \end{figure}
 
-\subsection{不含foldon的LgBiT构建体制备与NanoBiT滴定}
+尽管如此，含foldon体系仍不适合直接计算准确的表观亲和力或IC$_{50}$。当前使用的GST-LgBiT-preS 87--114-foldon构建体含有foldon结构域，可能诱导三聚化并增强多价结合；同时GST标签本身也具有二聚化倾向。这些因素可能提高体系的表观亲和力和发光信号，使小分子抑制被部分掩盖，也使剂量--反应曲线不能直接反映单价HBc--preS相互作用。因此，后续实验进一步转向不含foldon的LgBiT构建体，并尝试降低GST标签二聚化带来的影响。
 
-为降低foldon介导的多聚化效应，进一步制备了不含foldon的GST-LgBiT-preS 87--114-His和GST-LgBiT-His构建体。GST亲和纯化结果显示，GST-LgBiT-preS 87--114-His可在GST柱洗脱组分中观察到较清晰的目标条带，说明该构建体能够被GST柱有效捕获并洗脱。相比之下，GST-LgBiT-His在GST柱洗脱组分中回收较少，而流穿液中仍可见目标大小附近条带，提示该蛋白在当前条件下不易通过GST柱充分回收。
+\subsection{不含foldon的LgBiT融合蛋白的构建与制备}
+
+为降低foldon介导的多聚化效应，进一步制备了不含foldon的GST-LgBiT-preS 87--114-His和GST-LgBiT-His构建体。
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.8\textwidth]{docs/figures/result/result_17_constructs_ljq_67.png}
+  \caption{构建不含foldon的GST-LgBiT-preS 87--114-His和GST-LgBiT-His。}
+  \label{fig:foldon-free-constructs}
+\end{figure}
+
+GST亲和纯化结果显示，GST-LgBiT-preS 87--114-His可在GST柱洗脱组分中观察到较清晰的目标条带，说明该构建体能够被GST柱有效捕获并洗脱。相比之下，GST-LgBiT-His在GST柱洗脱组分中回收较少，而流穿液中仍可见目标大小附近条带，提示该蛋白在当前条件下不易通过GST柱充分回收。
 
 为提高阴性对照蛋白产量，进一步从GST柱流穿液出发，通过His标签富集和Q HP柱纯化获得GST-LgBiT-His。Q柱图谱中约16.03 mL处出现明显主峰，SDS-PAGE显示16--22管附近存在较集中的GST-LgBiT-His条带，说明补充纯化策略可获得足够的阴性对照蛋白用于后续实验。
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.58\textwidth]{figures/result/result_45.png}
-  \caption{不含foldon的GST-LgBiT-preS 87--114-His和GST-LgBiT-His的GST柱纯化结果。GST-LgBiT-preS 87--114-His在洗脱组分中较为明显，而GST-LgBiT-His回收效率较低。}
+  \includegraphics[width=0.95\textwidth]{docs/figures/result/result_18_ljq_67.png}
+  \caption{不含foldon的GST-LgBiT-preS 87--114-His和GST-LgBiT-His的GST柱纯化结果。A，GST-LgBiT-preS 87--114-His在洗脱组分中较为明显，而GST-LgBiT-His回收效率较低。B、C，GST-LgBiT-His从GST柱流穿液出发的进一步纯化。Ni柱富集和Q HP柱纯化后，可获得用于后续NanoBiT检测的阴性对照蛋白。}
   \label{fig:foldon-free-gst-purification}
 \end{figure}
 
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=0.82\textwidth]{figures/result/result_46.png}
-  \caption{GST-LgBiT-His从GST柱流穿液出发的进一步纯化。Ni柱富集和Q HP柱纯化后，可获得用于后续NanoBiT检测的阴性对照蛋白。}
-  \label{fig:gst-lgbit-his-further-purification}
-\end{figure}
+\subsection{不含foldon的LgBiT构建体重复NanoBiT滴定}
 
 使用新纯化的不含foldon构建体重复HBc--preS NanoBiT滴定实验。与含foldon体系相比，不含foldon的LgBiT-preS不再具有三聚化带来的多价优势，因此需要更高浓度才能产生足够的特异性发光信号。实验组信号随着LgBiT-preS浓度增加而持续上升，阴性对照维持在较低水平但仍具有一定浓度依赖背景。扣除阴性对照后，特异性信号逐渐升高并呈现弯曲趋势，说明该体系仍可检测HBc--preS相互作用，但表观结合强度低于含foldon体系。
 
@@ -293,34 +322,30 @@ SDS-PAGE结果显示，HBVCp182-SmBiT目标条带位于约22.33 kDa附近，并�
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.76\textwidth]{figures/result/result_47.png}
+  \includegraphics[width=0.95\textwidth]{docs/figures/result/result_19_foldon-free-nanobit-titration.png}
   \caption{不含foldon体系下的HBc--preS NanoBiT滴定结果。实验组信号随LgBiT-preS浓度升高而增加，提示该体系可用于后续小分子抑制检测。}
   \label{fig:foldon-free-nanobit-titration}
 \end{figure}
 
-\subsection{不含foldon体系下的小分子抑制结果与GST标签影响}
-
-在不含foldon体系中重新检测Triton X-100、NP-40和香叶醇对HBc--preS结合的影响。结果显示，三种小分子在高浓度区间均使实验组发光信号下降，其中Triton X-100和香叶醇的高浓度抑制趋势较为明显，NP-40的抑制曲线相对平缓且波动较大。扣除阴性对照后，Triton X-100和香叶醇的特异性结合百分比下降更清楚，说明不含foldon体系较含foldon体系更容易显示小分子作用。
-
-需要注意的是，高浓度小分子存在时，阴性对照信号也发生改变，提示这些分子可能不仅影响HBc--preS结合，也可能影响蛋白稳定性、NanoLuc片段互补效率或检测体系背景。因此，在目前数据基础上不宜直接给出IC$_{50}$。后续若进行定量拟合，需要加入NanoBiT片段互补本身的控制、蛋白聚集或变性控制，以及多次独立重复，并在背景受控的浓度区间内进行分析。
+\subsection{不同preS突变体与HBc结合能力比较}
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.74\textwidth]{figures/result/result_48.png}
-  \caption{不含foldon体系下的小分子抑制实验。Triton X-100和香叶醇在高浓度区间显示更明显的相对抑制趋势，但阴性对照背景变化提示仍需进一步控制体系背景。}
-  \label{fig:foldon-free-inhibitor-assay}
+  \includegraphics[width=0.8\textwidth]{docs/figures/result/result_20_preS_mutant.png}
+  \caption{不同preS突变体与HBc结合能力比较。}
+  \label{fig:pres-mutant-nanobit}
 \end{figure}
+
+\subsection{去除GST标签后preS突变体与HBc结合能力比较}
 
 由于GST标签本身可形成二聚体，可能使LgBiT-preS或LgBiT阴性对照发生非目标性聚集，从而影响NanoBiT信号解释，因此进一步使用PPase去除GST标签。SDS-PAGE结果显示，酶切后样品中出现与GST、LgBiT-preS和LgBiT相对应的条带；与未酶切样品相比，目标融合蛋白发生明显迁移变化，说明GST标签去除基本成功。该步骤为后续更接近单体状态的preS突变体比较提供了必要条件。
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.58\textwidth]{figures/result/result_49.png}
+  \includegraphics[width=0.6\textwidth]{docs/figures/result/result_21_ppase-gst-cleavage.png}
   \caption{PPase切除GST标签的SDS-PAGE分析。酶切后可观察到GST、LgBiT-preS和LgBiT相关条带，提示GST标签去除基本成功。}
   \label{fig:ppase-gst-cleavage}
 \end{figure}
-
-\subsection{去除GST标签后preS突变体与HBc结合能力比较}
 
 最后，利用酶切后的LgBiT-preS蛋白比较wild-type preS 87--114及R102A、H105A和W111A突变体与HBVCp182-SmBiT的结合能力。结果显示，wild-type preS 87--114在整个LgBiT浓度范围内均产生最高发光信号，且随浓度升高持续增加。相比之下，三个突变体的信号均显著降低，并接近或仅略高于LgBiT阴性对照。
 
@@ -328,11 +353,9 @@ SDS-PAGE结果显示，HBVCp182-SmBiT目标条带位于约22.33 kDa附近，并�
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.56\textwidth]{figures/result/result_50.png}
-  \hfill
-  \includegraphics[width=0.36\textwidth]{figures/result/result_51.png}
+  \includegraphics[width=0.8\textwidth]{docs/figures/result/result_22_gstfree-pres-mutant-nanobit.png}
   \caption{去除GST标签后wild-type preS 87--114与preS突变体的NanoBiT比较。R102A、H105A和W111A均显著降低HBc--preS互作信号，其中R102A和H105A下降最明显。}
-  \label{fig:pres-mutant-nanobit}
+  \label{fig:gstfree-pres-mutant-nanobit}
 \end{figure}
 
 \section{本章结果小结}
