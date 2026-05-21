@@ -44,6 +44,19 @@ NanoBiT体系中的另外三个构建体包括含preS 87--114片段的LgBiT融�
 
 \section{ELISA检测体系}
 
+\subsection{ELISA检测原理与类型}
+
+酶联免疫吸附实验（enzyme-linked immunosorbent assay, ELISA）是一类基于抗原--抗体特异性识别和酶催化信号放大的固相免疫检测方法。典型ELISA中，抗原或抗体首先固定于聚苯乙烯等固相载体表面，经封闭减少非特异性吸附后，依次加入待测样品、识别抗体和酶标试剂；未结合组分通过洗涤去除，最终由辣根过氧化物酶或碱性磷酸酶等酶标分子催化底物显色或发光，信号强度用于反映待测抗原或抗体的相对含量\cite{aydin2015short,ahirwar2022unveiling}。由于ELISA兼具较高特异性、可重复性和多孔板定量读数能力，常用于蛋白、抗原、抗体和其他生物标志物的检测\cite{ahirwar2022unveiling}。
+
+根据抗原、抗体和酶标试剂的组合方式，经典ELISA通常可分为直接ELISA、间接ELISA、夹心ELISA和竞争ELISA四类（图\ref{fig:elisa-types}）。直接ELISA将抗原固定在板面，并使用酶标一抗直接检测，步骤较少、操作较快，但信号放大能力相对有限。间接ELISA同样先固定抗原，再用未标记一抗识别目标，随后加入酶标二抗进行检测，因此具有更强的信号放大和更高的试剂灵活性。夹心ELISA先用捕获抗体固定待测抗原，再用识别不同表位的检测抗体和酶标二抗产生信号，通常具有较高特异性和灵敏度。竞争ELISA则利用样品中待测抗原或抗体与酶标竞争物争夺有限结合位点，读数常与待测物浓度呈反向关系，适用于小分子、单表位抗原或不易同时被两种抗体识别的目标\cite{aydin2015short,ahirwar2022unveiling}。
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.95\textwidth]{figures/methods/elisa_types.jpg}
+  \caption{四种经典ELISA类型示意图。直接ELISA、间接ELISA、夹心ELISA和竞争ELISA通过不同的抗原固定、抗体识别和酶标检测方式，将抗原--抗体结合事件转换为可定量读出的酶促信号。}
+  \label{fig:elisa-types}
+\end{figure}
+
 \subsection{HBc直接包被ELISA}
 
 HBc直接包被ELISA用于评估preS与固定化HBc之间是否能够形成可检测结合。实验中将HBVCp149直接包被于酶标板，封闭后加入带标签的preS蛋白，再使用抗标签抗体和相应显色体系检测结合到板上的preS信号。
@@ -89,11 +102,22 @@ StrepXT捕获preS ELISA用于改善preS在固相表面的取向和可及性。�
 
 \section{NanoBiT发光互补检测}
 
-\subsection{NanoBiT检测原理与构建体设计}
+\subsection{NanoBiT技术原理}
 
-NanoBiT是一种基于NanoLuc荧光素酶片段互补的蛋白相互作用检测技术。该系统由较大的LgBiT片段和较小的SmBiT片段组成，二者自身亲和力较弱。当两个片段分别融合到待测蛋白上时，只有在待测蛋白发生相互作用并使LgBiT与SmBiT空间接近时，二者才会互补形成具有催化活性的荧光素酶，并在加入底物后产生发光信号。由于该方法不依赖多轮洗涤，且检测过程更接近溶液状态，因此适合用于HBc--preS这类较弱、可逆且可能受固定化影响的相互作用。
+NanoBiT是一种基于NanoLuc荧光素酶拆分互补的蛋白相互作用检测技术。NanoLuc是一种小分子、单体化且发光强度较高的工程化荧光素酶，可催化furimazine氧化生成furimamide、二氧化碳和光信号。Dixon等利用NanoLuc体积小和发光强的特点，将其工程化拆分为两个互补片段：较大的LgBiT片段约18 kDa，较小的SmBiT片段为11个氨基酸、约1.3 kDa\cite{dixon2016nanoluc}。单独存在时，LgBiT与SmBiT之间的自发亲和力较弱；当二者分别融合到两个待测蛋白上，并因目标蛋白相互作用而靠近时，LgBiT和SmBiT可发生结构互补，重新形成具有催化活性的NanoLuc复合物，并在加入底物后产生可定量检测的发光信号。
 
-在构建体设计上，考虑到较大的LgBiT可能干扰HBc组装，本研究将较小的SmBiT融合至HBVCp182，而将LgBiT融合至preS 87--114片段一侧。实验组为HBVCp182-SmBiT与LgBiT-preS 87--114组合；阴性对照为HBVCp182-SmBiT与不含preS的LgBiT融合蛋白组合；阳性对照利用GST标签二聚化特性，将GST-SmBiT与GST-LgBiT相关蛋白组合，用于确认NanoBiT报告系统本身具有可检测上限。
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.75\textwidth]{figures/introduction/nanobit_principle.png}
+  \caption{NanoLuc与NanoBiT蛋白互补技术的基本原理。A，NanoLuc催化furimazine氧化并产生发光信号。B，NanoBiT由较小的SmBiT和较大的LgBiT组成，二者互补后恢复NanoLuc活性。C，当SmBiT和LgBiT分别融合到两个待测蛋白上时，目标蛋白相互作用可促进互补复合物形成并产生发光信号。\cite{dixon2016nanoluc}。}
+  \label{fig:nanobit-principle}
+\end{figure}
+
+与传统pull-down、免疫共沉淀或ELISA相比，NanoBiT读数依赖于两个融合蛋白在溶液或细胞环境中的空间接近，而不必将相互作用完全固定在固相表面。因此，该方法不依赖多轮洗涤，且检测过程更接近溶液状态，适合用于HBc--preS这类较弱、可逆且可能受固定化影响的相互作用。Dixon等测得NanoBiT片段自身的本征亲和力约为190 \textmu M，且互补过程具有可逆性，这一设计有助于降低报告片段自身结合对待测蛋白相互作用的驱动作用\cite{dixon2016nanoluc}。同时，NanoLuc体系发光强、背景低、线性范围宽，适合在多孔板中进行定量检测和候选调节因子筛选。
+
+\subsection{NanoBiT构建体设计}
+
+在构建体设计上，考虑到较大的LgBiT可能干扰HBc组装，本研究将较小的SmBiT融合至HBVCp182，而将LgBiT融合至preS 87--114片段一侧，以在尽量降低标签体积影响的同时检测二者是否发生空间接近。实验组为HBVCp182-SmBiT与LgBiT-preS 87--114组合；阴性对照为HBVCp182-SmBiT与不含preS的LgBiT融合蛋白组合；阳性对照利用GST标签二聚化特性，将GST-SmBiT与GST-LgBiT相关蛋白组合，用于确认NanoBiT报告系统本身具有可检测上限。需要注意的是，NanoBiT信号本质上反映的是融合蛋白之间的近距离互补，仍需配合阴性对照、不同标签方向、蛋白质量控制以及小分子对发光体系本身影响的排查，才能将发光变化谨慎解释为HBc--preS相互作用或其抑制效应。
 
 \subsection{NanoBiT发光检测流程}
 
