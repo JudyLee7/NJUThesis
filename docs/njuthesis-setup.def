@@ -43,11 +43,11 @@
     % 本模板并不会自动更正大小写
     %
     department = {匡亚明学院},
-    department* = {Kuangyaming Honors School},
+    department* = {Kuang Yaming Honors School},
     % 院系
     %
     major = {生物科学},
-    major* = {Biology},
+    major* = {Biological Sciences},
     % 专业
     %
     % major = {封面专业,摘要专业},

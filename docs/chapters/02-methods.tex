@@ -2,11 +2,11 @@
 
 \section{实验体系设计与技术路线}
 
-本研究建立HBV核心蛋白（HBc）与HBsAg preS区域相互作用的体外检测体系，并将其用于preS突变体和候选小分子的比较。为保证实验过程安全可控，本文所有实验均使用非感染性重组蛋白、人工构建的融合蛋白和体外发光检测体系，不涉及感染性HBV颗粒扩增、病毒传播能力增强或细胞感染模型。实验对象限定为HBc与preS片段之间的物理相互作用，而不是完整病毒复制过程。
+本研究建立HBV核心蛋白（HBc）与HBsAg preS区域相互作用的体外检测体系，并将其用于preS突变体和候选分子的比较。为保证实验过程安全可控，本文所有实验均使用非感染性重组蛋白、人工构建的融合蛋白和体外发光检测体系，不涉及感染性HBV颗粒扩增、病毒传播能力增强或细胞感染模型。实验对象限定为HBc与preS片段之间的物理相互作用，而不是完整病毒复制过程。
 
-既往遗传学和结构研究将preS 87--114片段指向L-HBsAg介导病毒颗粒形成的短线性功能区附近，该片段可能参与preS对HBV核衣壳的识别。本研究先尝试ELISA检测，比较不同固定化方式对HBc--preS互作读数的影响；随后使用NanoBiT发光互补体系，在溶液状态下检测HBVCp182与preS 87--114片段之间的空间接近。经过蛋白纯化、构建体设计、对照设置和检测条件调整后，后续小分子抑制和preS突变体比较主要采用NanoBiT方法。
+既往遗传学和结构研究将preS 87--114片段指向L-HBsAg介导病毒颗粒形成的短线性功能区附近，该片段可能参与preS对HBV核衣壳的识别。本研究先尝试ELISA检测，比较不同固定化方式对HBc--preS互作读数的影响；随后使用NanoBiT发光互补体系，在溶液状态下检测HBVCp182与preS 87--114片段之间的空间接近。经过蛋白纯化、构建体设计、对照设置和检测条件调整后，后续候选分子扰动和preS突变体比较主要采用NanoBiT方法。
 
-实验路线从蛋白制备开始。本文表达并纯化HBVCp149、StrepXT、抗HBc抗体以及HBVCp182-SmBiT、LgBiT-preS等融合蛋白，再依次比较HBc直接包被、StrepXT捕获preS和抗HBc Fab捕获HBc三种ELISA模式。NanoBiT部分则比较含foldon三聚化结构域、不含foldon三聚化结构域以及去除GST标签后的构建体条件。最后，利用优化后的体系检测Triton X-100、香叶醇等小分子以及preS R102A、H105A、W111A突变体对HBc--preS结合的影响。
+实验路线从蛋白制备开始。本文表达并纯化HBVCp149、StrepXT、抗HBc抗体以及HBVCp182-SmBiT、LgBiT-preS等融合蛋白，再依次比较HBc直接包被、StrepXT捕获preS和抗HBc Fab捕获HBc三种ELISA模式。NanoBiT部分则比较含foldon三聚化结构域、不含foldon三聚化结构域以及去除GST标签后的构建体条件。最后，利用优化后的体系检测Triton X-100、NP-40、香叶醇以及preS R102A、H105A、W111A突变体对HBc--preS相关信号的影响。
 
 \section{重组蛋白表达、纯化与质量分析}
 
@@ -20,7 +20,7 @@ HBVCp149用于ELISA中的核心蛋白包被或捕获实验。将HBV核心蛋白�
 
 StrepXT用于定向捕获带Strep标签的preS蛋白。将StrepXT表达质粒转化至\textit{E. coli} NiCo21-pLysS细胞，在含卡那霉素和氯霉素的LB培养基中培养。当OD$_{600}$达到0.6--0.8时，加入1 mM IPTG诱导，并在37 ℃培养4 h。收集菌体后用含EDTA的TBS洗涤并冻存。
 
-纯化时将菌体沉淀在含EDTA和Triton X-100的Tris缓冲液中重悬，经冻融、核酸酶处理和超声破碎后离心。StrepXT主要以包涵体形式存在，因此对沉淀进行洗涤后，用6 M盐酸胍在酸性条件下溶解，并通过透析逐步复性。复性后的样品经离心和过滤后上样至Q柱，以NaCl梯度洗脱。含目标条带的组分经SDS-PAGE确认后用于后续实验。为确认StrepXT复性后仍具备功能，进一步测定其Strep标签结合能力，并据此确定其可用于preS捕获ELISA。
+纯化时将菌体沉淀在含EDTA和Triton X-100的Tris缓冲液中重悬，经冻融、核酸酶处理和超声破碎后离心。StrepXT主要以包涵体形式存在，因此对沉淀进行洗涤后，用6 M盐酸胍在酸性条件下溶解，并通过透析逐步复性。复性后的样品经离心和过滤后上样至Q柱，以NaCl梯度洗脱。含目标条带的组分经SDS-PAGE确认后用于后续实验。为确认StrepXT复性后仍具备功能，进一步测定其Strep标签捕获功能，并据此确定其可用于preS捕获ELISA。
 
 \subsection{抗HBc IgG的转染与纯化}
 
@@ -34,13 +34,13 @@ StrepXT用于定向捕获带Strep标签的preS蛋白。将StrepXT表达质粒转
 
 \subsection{LgBiT-preS融合蛋白、阴性对照和阳性对照的制备}
 
-NanoBiT实验还需要三类配套蛋白：含preS 87--114片段的LgBiT融合蛋白，不含preS的LgBiT阴性对照，以及用于验证互补体系的GST-SmBiT阳性对照相关蛋白。早期实验采用GST-LgBiT-preS 87--114-foldon-strep-His和对应的GST-LgBiT-foldon-strep-His阴性对照，利用foldon三聚化结构域提高preS片段的多价呈递。由于foldon三聚化和GST二聚化都可能改变表观结合强度，后续又制备了不含foldon三聚化结构域的GST-LgBiT-preS 87--114-His和GST-LgBiT-His。
+NanoBiT实验还需要三类配套蛋白：含preS 87--114片段的LgBiT融合蛋白，不含preS的LgBiT阴性对照，以及用于验证互补体系的GST-SmBiT阳性对照相关蛋白。早期实验采用GST-LgBiT-preS 87--114-foldon-Strep-His和对应的GST-LgBiT-foldon-Strep-His阴性对照，利用foldon三聚化结构域提高preS片段的多价呈递。由于foldon三聚化和GST二聚化都可能改变表观结合强度，后续又制备了不含foldon三聚化结构域的GST-LgBiT-preS 87--114-His和GST-LgBiT-His。
 
 三种GST标记融合蛋白均在\textit{E. coli} NiCo21中表达。菌液OD$_{600}$达到0.6--0.8后加入200 \textmu M IPTG，在16 ℃诱导12 h。收集菌体后以含Tris、NaCl、PMSF、核酸酶和MgCl$_2$的裂解缓冲液重悬，并在冰浴中超声破碎。离心澄清后，上清上样至GST亲和柱。柱子经高盐缓冲液和TBS洗涤后，用含还原型谷胱甘肽的洗脱缓冲液洗脱目标蛋白。
 
 对于GST-LgBiT-preS 87--114-His和GST-LgBiT-His回收效率较低的情况，改进纯化方法，依次通过Ni亲和柱和Q HP阴离子交换柱得到纯化蛋白，以获得足量实验组和阴性对照蛋白。
 
-部分GST-LgBiT融合蛋白用PPase去除GST标签，以减少GST二聚化对NanoBiT读数的干扰。酶切前后通过SDS-PAGE比较迁移率，并依据GST、LgBiT-preS和LgBiT条带判断酶切是否充分。去除GST标签后的蛋白用于比较野生型preS与突变体的HBc结合能力。
+部分GST-LgBiT融合蛋白用PPase去除GST标签，以减少GST二聚化对NanoBiT读数的干扰。酶切前后通过SDS-PAGE比较迁移率，并依据GST、LgBiT-preS和LgBiT条带判断酶切是否充分。去除GST标签后的蛋白用于比较野生型preS与突变体的HBc相关NanoBiT信号。
 
 \section{ELISA检测体系}
 
@@ -53,7 +53,7 @@ NanoBiT实验还需要三类配套蛋白：含preS 87--114片段的LgBiT融合�
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=1.0\textwidth]{figures/methods/elisa_types.jpg}
-  \caption{四种ELISA类型示意。直接、间接、夹心和竞争ELISA在抗原固定、抗体识别和酶标读出方式上不同，均把抗原--抗体结合转换为酶促信号。图片来源vecteezy。}
+  \caption{四种ELISA类型示意。直接、间接、夹心和竞争ELISA在抗原固定、抗体识别和酶标读出方式上不同，均把抗原--抗体结合转换为酶促信号。图片来源：Vecteezy\cite{vecteezy2022elisa}。}
   \label{fig:elisa-types}
 \end{figure}
 
@@ -104,12 +104,12 @@ StrepXT捕获preS ELISA用于调整preS在固相表面的取向。实验时先�
 
 \subsection{NanoBiT技术原理}
 
-NanoBiT是一种基于NanoLuc荧光素酶拆分互补的蛋白相互作用检测技术。NanoLuc是一种小分子、单体化且发光强度较高的工程化荧光素酶，可催化furimazine氧化生成furimamide、二氧化碳和光信号。Dixon等利用NanoLuc体积小和发光强的特点，将其工程化拆分为两个互补片段：较大的LgBiT片段约18 kDa，较小的SmBiT片段为11个氨基酸、约1.3 kDa\cite{dixon2016nanoluc}。LgBiT与SmBiT单独存在时自发亲和力较弱；当二者分别融合到两个待测蛋白上，并因目标蛋白相互作用而靠近时，LgBiT和SmBiT可发生结构互补，重新形成具有催化活性的NanoLuc复合物，加入底物后产生发光信号。
+NanoBiT是一种基于NanoLuc荧光素酶拆分互补的蛋白相互作用检测技术。NanoLuc是一种小型、单体化且发光强度较高的工程化荧光素酶，可催化furimazine氧化生成furimamide、二氧化碳和光信号。Dixon等利用NanoLuc体积小和发光强的特点，将其工程化拆分为两个互补片段：较大的LgBiT片段约18 kDa，较小的SmBiT片段为11个氨基酸、约1.3 kDa\cite{dixon2016nanoluc}。LgBiT与SmBiT单独存在时自发亲和力较弱；当二者分别融合到两个待测蛋白上，并因目标蛋白相互作用而靠近时，LgBiT和SmBiT可发生结构互补，重新形成具有催化活性的NanoLuc复合物，加入底物后产生发光信号。
 
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=0.90\textwidth]{figures/introduction/nanobit_principle.png}
-  \caption{NanoLuc与NanoBiT蛋白互补技术原理。A，NanoLuc催化furimazine氧化并产生发光信号。B，NanoBiT由SmBiT和LgBiT组成，二者互补后恢复NanoLuc活性。C，SmBiT和LgBiT分别融合到两个待测蛋白上时，目标蛋白靠近可带来发光信号。\cite{dixon2016nanoluc}。}
+  \caption{NanoLuc与NanoBiT蛋白互补技术原理。A，NanoLuc催化furimazine氧化并产生发光信号。B，NanoBiT由SmBiT和LgBiT组成，二者互补后恢复NanoLuc活性。C，SmBiT和LgBiT分别融合到两个待测蛋白上时，目标蛋白靠近可带来发光信号，引自文献\cite{dixon2016nanoluc}。}
   \label{fig:nanobit-principle}
 \end{figure}
 
@@ -117,7 +117,7 @@ NanoBiT是一种基于NanoLuc荧光素酶拆分互补的蛋白相互作用检测
 
 \subsection{NanoBiT构建体设计}
 
-构建体设计时，较大的LgBiT不放在HBc侧，以免干扰HBc组装。本研究把较小的SmBiT融合至HBVCp182，把LgBiT接到preS 87--114片段一侧。实验组为HBVCp182-SmBiT与LgBiT-preS 87--114组合；阴性对照为HBVCp182-SmBiT与不含preS的LgBiT融合蛋白组合；阳性对照利用GST标签二聚化特性，将GST-SmBiT与GST-LgBiT相关蛋白组合，用来确认NanoBiT报告系统的检测上限。需要说明的是，NanoBiT信号本质上反映融合蛋白之间的近距离互补，因此仍需结合阴性对照、标签方向、蛋白质量控制以及小分子对发光体系本身影响的排查，再谨慎解释HBc--preS相互作用或其抑制效应。
+构建体设计时，较大的LgBiT不放在HBc侧，以免干扰HBc组装。本研究把较小的SmBiT融合至HBVCp182，把LgBiT接到preS 87--114片段一侧。实验组为HBVCp182-SmBiT与LgBiT-preS 87--114组合；阴性对照为HBVCp182-SmBiT与不含preS的LgBiT融合蛋白组合；阳性对照利用GST标签二聚化特性，将GST-SmBiT与GST-LgBiT相关蛋白组合，用来确认NanoBiT报告系统的检测上限。需要说明的是，NanoBiT信号本质上反映融合蛋白之间的近距离互补，因此仍需结合阴性对照、标签方向、蛋白质量控制以及候选分子对发光体系本身影响的排查，再谨慎解释HBc--preS相互作用或其表观抑制效应。
 
 \subsection{NanoBiT发光检测流程}
 
@@ -125,21 +125,23 @@ NanoBiT检测在白色384孔板中进行。实验前将LgBiT融合蛋白和SmBiT
 
 初始NanoBiT实验中，LgBiT与SmBiT蛋白按1:1浓度比例混合，以判断实验组、阴性对照和阳性对照之间是否存在可分辨信号。优化实验中固定HBVCp182-SmBiT的终浓度，并滴定LgBiT-preS或LgBiT阴性对照蛋白。
 
-\section{小分子抑制、突变体比较与数据分析}
+\section{候选分子扰动、突变体比较与数据分析}
 
-\subsection{小分子抑制实验}
+\subsection{候选分子扰动实验}
 
-小分子抑制实验用于评估候选分子是否改变HBc--preS相关NanoBiT信号。本文检测Triton X-100（TX100）、NP-40和香叶醇。在含foldon三聚化结构域的体系中，根据NanoBiT滴定结果选择40 nM GST-LgBiT-preS 87--114-foldon-strep-His作为初筛工作浓度，并使用相同浓度的GST-LgBiT-foldon-strep-His作为阴性对照。初筛时，将小分子按浓度梯度加入NanoBiT反应体系后读取发光信号。由于直接加药条件下抑制趋势不够稳定，后续改为先将小分子与HBVCp182-SmBiT预孵育约2 h，再加入LgBiT-preS或LgBiT阴性对照检测，并适当提高小分子浓度范围。分析这些结果时，同时考虑溶剂背景、高浓度去垢剂对蛋白稳定性、NanoBiT片段互补、底物发光反应和体系浊度的影响。
+候选分子扰动实验用于评估外源分子是否改变HBc--preS相关NanoBiT信号。本文检测的Triton X-100（TX100）和NP-40为非离子表面活性剂/去垢剂，香叶醇为疏水小分子和HBc口袋探针。在含foldon三聚化结构域的体系中，根据NanoBiT滴定结果选择40 nM GST-LgBiT-preS 87--114-foldon-Strep-His作为初筛工作浓度，并使用相同浓度的GST-LgBiT-foldon-Strep-His作为阴性对照。初筛时，将候选分子按浓度梯度加入NanoBiT反应体系后读取发光信号。由于直接加药条件下表观抑制趋势不够稳定，后续改为先将候选分子与HBVCp182-SmBiT预孵育约2 h，再加入LgBiT-preS或LgBiT阴性对照检测，并适当提高候选分子浓度范围。分析这些结果时，同时考虑溶剂背景、高浓度去垢剂或疏水分子对蛋白稳定性、蛋白聚集状态、NanoBiT片段互补、底物发光反应、体系浊度和背景信号的影响。
 
-为降低foldon三聚化结构域带来的多价效应，后续构建并制备不含该结构域的GST-LgBiT-preS 87--114-His和GST-LgBiT-His。该体系主要用于观察去除foldon三聚化结构域后NanoBiT信号窗口如何变化，并作为preS突变体比较的基础；本文的小分子表观抑制结果仍主要基于含foldon三聚化结构域的构建体解释。实验中同步检测实验组和阴性对照组，分析时扣除或比较阴性对照背景，以判断小分子对HBc--preS相关信号的影响。
+为降低foldon三聚化结构域带来的多价效应，后续构建并制备不含该结构域的GST-LgBiT-preS 87--114-His和GST-LgBiT-His。该体系主要用于观察去除foldon三聚化结构域后NanoBiT信号窗口如何变化，并作为preS突变体比较的基础；本文的候选分子表观抑制结果仍主要基于含foldon三聚化结构域的构建体解释。实验中同步检测实验组和阴性对照组，分析时扣除或比较阴性对照背景，以判断候选分子对HBc--preS相关信号的影响。
 
-\subsection{preS突变体结合能力比较}
+\subsection{preS突变体相关信号比较}
 
-为检验结构模型中关键残基对HBc结合的贡献，本研究比较野生型（wild-type）preS 87--114及R102A、H105A和W111A突变体的NanoBiT信号。由于foldon三聚化结构域和GST标签可能带来多价结合或非目标性二聚化，突变体比较优先使用去除foldon三聚化结构域后的LgBiT-preS蛋白。实验中固定HBVCp182-SmBiT，滴定不同LgBiT-preS突变体蛋白，并设置LgBiT阴性对照。通过比较同一浓度范围内的发光信号强度和相对趋势，评估各残基对HBc--preS相互作用的影响。
+为考察结构模型中关键残基对HBc相关信号的影响，本研究比较野生型（wild-type）preS 87--114及R102A、H105A和W111A突变体的NanoBiT信号。由于foldon三聚化结构域和GST标签可能带来多价结合或非目标性二聚化，突变体比较优先使用去除foldon三聚化结构域后的LgBiT-preS蛋白。实验中固定HBVCp182-SmBiT，滴定不同LgBiT-preS突变体蛋白，并设置LgBiT阴性对照。通过比较同一浓度范围内的发光信号强度和相对趋势，分析各突变体的HBc--preS相关NanoBiT信号变化。
 
 \subsection{数据处理与评价指标}
 
-ELISA和NanoBiT实验均设置实验组、阴性对照和必要的背景对照。对于浓度滴定实验，首先计算各条件下重复孔的平均值和标准差；除特别说明外，图中误差线表示同一实验内重复孔的标准差。随后根据实验设计扣除无核心蛋白、无preS或不含preS的LgBiT阴性对照背景，得到特异性信号。对呈饱和趋势的结合曲线，可采用Langmuir单点结合模型进行拟合，以描述信号随蛋白浓度增加逐渐接近平台的趋势。由于NanoBiT读数同时受到融合蛋白空间接近、片段互补效率和标签多聚化状态影响，拟合参数仅作为当前检测构型下的表观参数，不直接等同于热力学解离常数。
+ELISA和NanoBiT实验均设置实验组、阴性对照和必要的背景对照。对于浓度滴定实验，首先计算各条件下重复孔的平均值和标准差；除特别说明外，图中误差线表示同一实验内重复孔的标准差。随后根据实验设计扣除无核心蛋白、无preS或不含preS的LgBiT阴性对照背景，得到特异性信号。对呈饱和趋势的结合曲线，可采用Langmuir单点结合模型进行拟合，以描述信号随蛋白浓度增加逐渐接近平台的趋势。
+
+NanoBiT发光强度反映两个融合蛋白之间的空间接近以及LgBiT/SmBiT互补效率，不等同于直接热力学结合常数。K$_{\mathrm{app}}$、表观 IC$_{50}$等参数受融合标签大小、连接肽柔性、LgBiT/SmBiT自身互补、foldon三聚化结构域、GST二聚化、局部浓度、蛋白质量以及候选分子对发光反应的潜在干扰影响。因此，这些参数仅用于同一构型、同一批次或严格可比条件下的相对比较，不可直接外推为单价HBc--preS结合的$K_{\mathrm{D}}$或真实药效抑制常数。
 
 检测体系的统计学窗口使用Z-factor评价。Z-factor同时考虑实验组与阴性对照之间的均值差异和组内波动，可反映检测体系是否具备稳定筛选能力，其计算公式如下\cite{zhang1999simple}：
 \begin{equation}
@@ -147,4 +149,4 @@ ELISA和NanoBiT实验均设置实验组、阴性对照和必要的背景对照�
   {\left|\mu_{\mathrm{exp}}-\mu_{\mathrm{neg}}\right|}.
   \label{eq:z-factor}
 \end{equation}
-其中，$\mu_{\mathrm{exp}}$和$\sigma_{\mathrm{exp}}$分别表示实验组信号的平均值和标准差，$\mu_{\mathrm{neg}}$和$\sigma_{\mathrm{neg}}$分别表示阴性对照信号的平均值和标准差。通常Z-factor大于0.5说明检测窗口较好，可用于较稳健的定量比较；0--0.5提示体系处于边界状态；小于0则说明实验组和对照组分离不足或波动过大。Z-factor反映筛选窗口质量，不能单独证明分子机制。小分子抑制实验中，若高浓度小分子同时改变阴性对照信号、阳性互补信号或底物背景，则不直接计算IC$_{50}$，仅进行趋势性分析，并把背景变化列为后续优化内容。
+其中，$\mu_{\mathrm{exp}}$和$\sigma_{\mathrm{exp}}$分别表示实验组信号的平均值和标准差，$\mu_{\mathrm{neg}}$和$\sigma_{\mathrm{neg}}$分别表示阴性对照信号的平均值和标准差。通常Z-factor大于0.5说明检测窗口较好，可用于较稳健的定量比较；0--0.5提示体系处于边界状态；小于0则说明实验组和对照组分离不足或波动过大。Z-factor反映筛选窗口质量，不能单独证明分子机制。候选分子扰动实验中，若高浓度候选分子同时改变阴性对照信号、阳性互补信号或底物背景，则不直接计算表观 IC$_{50}$，仅进行趋势性分析，并把背景变化列为后续优化内容。
